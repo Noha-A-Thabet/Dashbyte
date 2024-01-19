@@ -572,10 +572,6 @@ video {
   width: 50px;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -596,16 +592,12 @@ video {
   border-radius: 9999px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-8 {
-  border-width: 8px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-solid {
@@ -636,8 +628,4 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.tracking-\[\.20em\] {
-  letter-spacing: .20em;
 }

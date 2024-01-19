@@ -3,9 +3,14 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="border-solid border-2 border-indigo-600 h-[60px] w-[100%] flex justify-between items-center px-[10px] ">
+    <nav
+      className=" h-[60px] w-[100%] flex justify-between items-center px-[10px] fixed z-100W"
+      style={{
+        borderBottom: "1px solid lightgray",
+        boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
+      }}
+    >
       <div
-        // className="border-2 border-indigo-600"
         style={{
           display: "flex",
           width: "500px",
