@@ -3,8 +3,9 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
+    //fixed z-100
     <nav
-      className=" h-[60px] w-[100%] flex justify-between items-center px-[10px] fixed z-100W"
+      className=" h-[60px] w-[100%] flex justify-between items-center px-[10px] "
       style={{
         borderBottom: "1px solid lightgray",
         boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
