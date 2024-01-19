@@ -13,7 +13,11 @@ export default {
       gray: "#f8f8fb",
       purple: "#d4dbf9",
       darkPurple: "#8f75e6"
-    }
+    },
+    container: {
+      center: true,
+      padding: '2rem',
+    },
   },
   plugins: [],
 }

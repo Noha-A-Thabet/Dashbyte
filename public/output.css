@@ -546,6 +546,10 @@ video {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -589,6 +593,11 @@ video {
 .mx-\[25px\] {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mt-\[-20px\] {
@@ -643,16 +652,16 @@ video {
   width: 120px;
 }
 
-.w-\[30\%\] {
-  width: 30%;
+.w-\[20vw\] {
+  width: 20vw;
 }
 
 .w-\[30px\] {
   width: 30px;
 }
 
-.w-\[40\%\] {
-  width: 40%;
+.w-\[40vw\] {
+  width: 40vw;
 }
 
 .w-\[50\%\] {
@@ -663,8 +672,24 @@ video {
   width: 50px;
 }
 
+.w-\[50vw\] {
+  width: 50vw;
+}
+
 .w-\[65px\] {
   width: 65px;
+}
+
+.w-\[99vw\] {
+  width: 99vw;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-row {
@@ -774,4 +799,49 @@ video {
 .text-\[\#8f75e6\] {
   --tw-text-opacity: 1;
   color: rgb(143 117 230 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
