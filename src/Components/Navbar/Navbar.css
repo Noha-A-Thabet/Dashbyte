@@ -1,0 +1,89 @@
+.searchBar:focus {
+    border: 0;
+    outline: 0;
+}
+
+
+/* Max-width:600px */
+@media (max-width:600px) {
+    .navBar {
+        /* border: 2px solid blue; */
+        width: 800px !important
+    }
+
+    .logoName {
+        font-size: 20px !important;
+        /* border: 2px solid red; */
+        width: 50%;
+        text-align: center;
+
+    }
+}
+
+
+/* Min-width:600px */
+
+@media (min-width:600px) {
+    .navBar {
+        /* border: 2px solid green; */
+        width: 900px !important
+    }
+
+    .logoName {
+        font-size: 20px !important;
+        /* border: 2px solid red; */
+        width: 50%;
+        text-align: center;
+
+    }
+}
+
+
+/* min-width: 768px*/
+
+@media (min-width: 768px) {
+    .navBar {
+        /* border: 2px solid purple; */
+        width: 900px !important
+    }
+
+    .logoName {
+        font-size: 20px !important;
+        /* border: 2px solid red; */
+        width: 50%;
+        text-align: center;
+
+    }
+}
+
+/* min-width: 992px */
+@media (min-width: 992px) {
+    .navBar {
+        /* border: 2px solid rgb(133, 160, 177); */
+        width: 900px !important
+    }
+
+    .logoName {
+        font-size: 20px !important;
+        /* border: 2px solid red; */
+        width: 50%;
+        text-align: center;
+
+    }
+}
+
+/* min-width: 1200px */
+@media (min-width: 1200px) {
+    .navBar {
+        /* border: 2px solid rgb(187, 204, 1); */
+        width: 900px !important
+    }
+
+    .logoName {
+        font-size: 20px !important;
+        /* border: 2px solid red; */
+        width: 50%;
+        text-align: center;
+
+    }
+}
