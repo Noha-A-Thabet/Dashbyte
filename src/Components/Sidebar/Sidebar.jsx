@@ -11,21 +11,28 @@ import { FaTasks } from "react-icons/fa";
 import { FaFileInvoiceDollar } from "react-icons/fa";
 import { FaWifi } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
     <section className="sideSec w-[150px] h-[100vh] fixed left-0 bg-[#2a3042] text-white p-6 ">
       <div className="container mx-auto">
-        <h1 className="text-center font-lemon tracking-widest ">Dashbyte</h1>
+        <h1
+          className="text-center font-lemon tracking-widest"
+          style={{ paddingBottom: "40px", paddingTop: "20px" }}
+        >
+          <Link to="/">Dashbyte</Link>
+        </h1>
 
         {/* home */}
         <h2 className="font-mont flex  items-center p-[10px]">
           <span>
             <IoHomeOutline />
           </span>
-          <span className="px-[10px]">Home</span>
+          <span className="px-[10px]">
+            <Link to="/">Home</Link>
+          </span>
         </h2>
 
         {/* team */}
@@ -33,15 +40,9 @@ const Sidebar = () => {
           <span>
             <HiUsers />
           </span>
-          <span className="px-[10px]"> Team</span>
-        </h2>
-
-        {/* calendars */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaRegCalendarAlt />
+          <span className="px-[10px]">
+            <Link to="team">Team</Link>
           </span>
-          <span className="px-[10px]">Calendars</span>
         </h2>
 
         {/* forms */}
@@ -49,7 +50,9 @@ const Sidebar = () => {
           <span>
             <FaWpforms />
           </span>
-          <span className="px-[10px]"> Forms</span>
+          <span className="px-[10px]">
+            <Link to="Forms">Forms</Link>
+          </span>
         </h2>
 
         {/* Email*/}
@@ -57,7 +60,9 @@ const Sidebar = () => {
           <span>
             <MdEmail />
           </span>
-          <span className="px-[10px]"> Email</span>
+          <span className="px-[10px]">
+            <Link to="Email">Email</Link>
+          </span>
         </h2>
 
         {/* jobs */}
@@ -65,15 +70,9 @@ const Sidebar = () => {
           <span>
             <MdWork />
           </span>
-          <span className="px-[10px]"> Jobs</span>
-        </h2>
-
-        {/* Projects */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <AiOutlineFundProjectionScreen />
+          <span className="px-[10px]">
+            <Link to="Jobs">Jobs</Link>
           </span>
-          <span className="px-[10px]"> Projects</span>
         </h2>
 
         {/* Tasks */}
@@ -81,23 +80,9 @@ const Sidebar = () => {
           <span>
             <FaTasks />
           </span>
-          <span className="px-[10px]">Tasks</span>
-        </h2>
-
-        {/* contacts */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaWifi />
+          <span className="px-[10px]">
+            <Link to="Tasks">Tasks</Link>
           </span>
-          <span className="px-[10px]"> Contacts</span>
-        </h2>
-
-        {/* Invoices */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaFileInvoiceDollar />
-          </span>
-          <span className="px-[10px]">Invoices</span>
         </h2>
 
         {/* charts */}
@@ -105,7 +90,9 @@ const Sidebar = () => {
           <span>
             <IoBarChartSharp />
           </span>
-          <span className="px-[10px]"> Charts</span>
+          <span className="px-[10px]">
+            <Link to="Charts"> Charts</Link>
+          </span>
         </h2>
 
         {/* blogs */}
@@ -113,7 +100,9 @@ const Sidebar = () => {
           <span>
             <IoDocument />
           </span>
-          <span className="px-[10px]"> Blogs</span>
+          <span className="px-[10px]">
+            <Link to="Blogs"> Blogs</Link>
+          </span>
         </h2>
 
         {/* maps */}
@@ -121,12 +110,54 @@ const Sidebar = () => {
           <span>
             <SiGooglemaps />
           </span>
-          <span className="px-[10px]"> Maps</span>
+          <span className="px-[10px]">
+            <Link to="Maps"> Maps</Link>
+          </span>
         </h2>
 
-        <div className="border-2 border-red-600 h-[200px] relative bottom-0">
-          <h3 className="absolute bottom-1 text-center ">
-            2024 © Borex. Design & Develop by Themesbrand
+        {/* Invoices */}
+        <h2 className="font-mont flex items-center p-[10px]">
+          <span>
+            <FaFileInvoiceDollar />
+          </span>
+          <span className="px-[10px]">
+            <Link to="Invoices"> Invoices</Link>
+          </span>
+        </h2>
+
+        {/* Projects */}
+        <h2 className="font-mont flex items-center p-[10px]">
+          <span>
+            <AiOutlineFundProjectionScreen />
+          </span>
+          <span className="px-[10px]">
+            <Link to="Projects">Projects</Link>
+          </span>
+        </h2>
+
+        {/* calendars */}
+        <h2 className="font-mont flex items-center p-[10px]">
+          <span>
+            <FaRegCalendarAlt />
+          </span>
+          <span className="px-[10px]">
+            <Link to="calendars">Calendars</Link>
+          </span>
+        </h2>
+
+        {/* contacts */}
+        <h2 className="font-mont flex items-center p-[10px]">
+          <span>
+            <FaWifi />
+          </span>
+          <span className="px-[10px]">
+            <Link to="Contacts"> Contacts</Link>
+          </span>
+        </h2>
+
+        <div className="sibeFooter relative ">
+          <h3 className="absolute bottom-0  font-bold text-center">
+            Design By Noha Ashraf
           </h3>
         </div>
       </div>
