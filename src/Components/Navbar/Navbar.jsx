@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav
-      className="z-100 h-[60px] flex justify-between items-center"
+      className="navBar z-100 h-[60px] flex justify-between items-center"
       style={{
         borderBottom: "1px solid lightgray",
         boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
@@ -14,6 +14,7 @@ const Navbar = () => {
         width: "89.5vw",
       }}
     >
+      {/* logo */}
       <div
         style={{
           display: "flex",
@@ -28,7 +29,7 @@ const Navbar = () => {
           Dashbyte
         </h2>
       </div>
-      {/* second*/}
+      {/* input*/}
       <div
         style={{
           width: "29vw",
@@ -48,9 +49,9 @@ const Navbar = () => {
         />
       </div>
 
-      {/* third*/}
+      {/* Icons*/}
       <div
-        className=" flex flex-nowrap  justify-center items-center"
+        className="iconsSec flex flex-nowrap  justify-center items-center"
         style={{
           width: "7vw",
         }}

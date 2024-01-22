@@ -7,83 +7,119 @@
 /* Max-width:600px */
 @media (max-width:600px) {
     .navBar {
-        /* border: 2px solid blue; */
-        width: 800px !important
+        border: 2px solid pink;
+        position: "fixed";
+        top: 0 !important;
+        left: 140px !important;
+        width: calc(100vw - 145px) !important;
     }
 
     .logoName {
-        font-size: 20px !important;
+        font-size: 15px !important;
         /* border: 2px solid red; */
-        width: 50%;
+        width: 100%;
         text-align: center;
+    }
 
+    .searchBar {
+        /* border: 2px solid greenyellow !important; */
+        width: 20vw !important;
+        height: 5px !important;
+    }
+
+    .iconsSec {
+        /* border: 2px solid yellow !important; */
+        width: 20vw !important
     }
 }
 
 
 /* Min-width:600px */
-
 @media (min-width:600px) {
     .navBar {
-        /* border: 2px solid green; */
-        width: 900px !important
+        border: 2px solid purple;
+        position: "fixed";
+        top: 0 !important;
+        left: 140px !important;
+        width: calc(100vw - 145px) !important;
     }
 
     .logoName {
-        font-size: 20px !important;
+        font-size: 15px !important;
         /* border: 2px solid red; */
-        width: 50%;
+        width: 100%;
         text-align: center;
+    }
 
+    .searchBar {
+        /* border: 2px solid greenyellow !important; */
+        width: 23vw !important;
+        height: 5px !important;
+    }
+
+    .iconsSec {
+        /* border: 2px solid yellow !important; */
+        width: 20vw !important
     }
 }
 
 
 /* min-width: 768px*/
-
 @media (min-width: 768px) {
     .navBar {
-        /* border: 2px solid purple; */
-        width: 900px !important
+        border: 2px solid purple;
+        position: "fixed";
+        top: 0 !important;
+        left: 150px !important;
+        width: calc(100vw - 155px) !important;
     }
 
     .logoName {
-        font-size: 20px !important;
+        font-size: 18px !important;
         /* border: 2px solid red; */
-        width: 50%;
+        width: 100%;
         text-align: center;
+    }
 
+    .searchBar {
+        /* border: 2px solid greenyellow !important; */
+        width: 23vw !important;
+        height: 5px !important;
+    }
+
+    .iconsSec {
+        /* border: 2px solid yellow !important; */
+        /* width: 20vw !important */
     }
 }
 
 /* min-width: 992px */
 @media (min-width: 992px) {
     .navBar {
-        /* border: 2px solid rgb(133, 160, 177); */
-        width: 900px !important
+        border: 2px solid tan;
+        position: "fixed";
+        top: 0 !important;
+        left: 200px !important;
+        width: calc(100vw - 205px) !important;
     }
 
     .logoName {
         font-size: 20px !important;
         /* border: 2px solid red; */
-        width: 50%;
+        width: 100%;
         text-align: center;
+    }
 
+    .searchBar {
+        /* border: 2px solid greenyellow !important; */
+        width: 20vw !important;
+        height: 10px !important;
+    }
+
+    .iconsSec {
+        /* border: 2px solid yellow !important; */
+        width: 15vw !important
     }
 }
 
 /* min-width: 1200px */
-@media (min-width: 1200px) {
-    .navBar {
-        /* border: 2px solid rgb(187, 204, 1); */
-        width: 900px !important
-    }
-
-    .logoName {
-        font-size: 20px !important;
-        /* border: 2px solid red; */
-        width: 50%;
-        text-align: center;
-
-    }
-}
