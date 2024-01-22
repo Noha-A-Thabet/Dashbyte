@@ -4,16 +4,20 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav
-      className=" h-[60px] w-[100%] flex justify-between items-center px-[10px] fixed top-0   left: 0 z-100W"
+      className="z-100 h-[60px] flex justify-between items-center"
       style={{
         borderBottom: "1px solid lightgray",
         boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
+        position: "fixed",
+        top: "0px",
+        left: "10.2vw",
+        width: "89.5vw",
       }}
     >
       <div
         style={{
           display: "flex",
-          width: "500px",
+          width: "22vw",
           justifyContent: "flex-start",
         }}
       >
@@ -25,13 +29,17 @@ const Navbar = () => {
         </h2>
       </div>
       {/* second*/}
-      <div>
+      <div
+        style={{
+          width: "29vw",
+        }}
+      >
         <input
           type="search"
           placeholder="search"
           style={{
             backgroundColor: "#f3f3f9",
-            height: "30px",
+            height: "10px",
             width: "230px",
             padding: "12px",
             border: "1px solid lightgray",
@@ -41,8 +49,13 @@ const Navbar = () => {
       </div>
 
       {/* third*/}
-      <div className="w-[50%]  flex flex-nowrap justify-end items-center ">
-        <div className="w-[50px]  ">
+      <div
+        className=" flex flex-nowrap  justify-center items-center"
+        style={{
+          width: "7vw",
+        }}
+      >
+        <div className="w-[50px]">
           <BiSolidBellRing style={{ fontSize: "20px" }} />
         </div>
 

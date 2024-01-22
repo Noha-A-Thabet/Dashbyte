@@ -13,18 +13,16 @@ import { FaWifi } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
-
 const Sidebar = () => {
   return (
-    <section className="sideSec w-[150px] h-[100vh] fixed left-0 bg-[#2a3042] text-white p-6 ">
+    <section className="sideSec w-[150px] h-[100vh] fixed left-0 top-0 bg-[#2a3042] text-white p-6 ">
       <div className="container mx-auto">
         <h1
           className="text-center font-lemon tracking-widest"
-          style={{ paddingBottom: "40px", paddingTop: "20px" }}
+          style={{ paddingBottom: "40px" }}
         >
           <Link to="/">Dashbyte</Link>
         </h1>
-
         {/* home */}
         <h2 className="font-mont flex  items-center p-[10px]">
           <span>
@@ -34,7 +32,6 @@ const Sidebar = () => {
             <Link to="/">Home</Link>
           </span>
         </h2>
-
         {/* team */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -44,7 +41,6 @@ const Sidebar = () => {
             <Link to="team">Team</Link>
           </span>
         </h2>
-
         {/* forms */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -54,7 +50,6 @@ const Sidebar = () => {
             <Link to="Forms">Forms</Link>
           </span>
         </h2>
-
         {/* Email*/}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -64,7 +59,6 @@ const Sidebar = () => {
             <Link to="Email">Email</Link>
           </span>
         </h2>
-
         {/* jobs */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -74,7 +68,6 @@ const Sidebar = () => {
             <Link to="Jobs">Jobs</Link>
           </span>
         </h2>
-
         {/* Tasks */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -84,7 +77,6 @@ const Sidebar = () => {
             <Link to="Tasks">Tasks</Link>
           </span>
         </h2>
-
         {/* charts */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -94,7 +86,6 @@ const Sidebar = () => {
             <Link to="Charts"> Charts</Link>
           </span>
         </h2>
-
         {/* blogs */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -104,7 +95,6 @@ const Sidebar = () => {
             <Link to="Blogs"> Blogs</Link>
           </span>
         </h2>
-
         {/* maps */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -114,7 +104,6 @@ const Sidebar = () => {
             <Link to="Maps"> Maps</Link>
           </span>
         </h2>
-
         {/* Invoices */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -124,7 +113,6 @@ const Sidebar = () => {
             <Link to="Invoices"> Invoices</Link>
           </span>
         </h2>
-
         {/* Projects */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -134,7 +122,6 @@ const Sidebar = () => {
             <Link to="Projects">Projects</Link>
           </span>
         </h2>
-
         {/* calendars */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -144,7 +131,6 @@ const Sidebar = () => {
             <Link to="calendars">Calendars</Link>
           </span>
         </h2>
-
         {/* contacts */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span>
@@ -154,7 +140,6 @@ const Sidebar = () => {
             <Link to="Contacts"> Contacts</Link>
           </span>
         </h2>
-
         <div className="sibeFooter relative ">
           <h3 className="absolute bottom-0  font-bold text-center">
             Design By Noha Ashraf
@@ -164,5 +149,4 @@ const Sidebar = () => {
     </section>
   );
 };
-
 export default Sidebar;

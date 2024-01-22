@@ -1,10 +1,7 @@
-import Sidebar from "../Sidebar/Sidebar";
+// import Sidebar from "../Sidebar/Sidebar";
+
 const Home = () => {
-  return (
-    <div>
-      <Sidebar />
-    </div>
-  );
+  return <div>home</div>;
 };
 
 export default Home;
