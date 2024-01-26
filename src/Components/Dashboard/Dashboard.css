@@ -1,0 +1,19 @@
+.profileImg {
+    background-image: url(../../assets/profile-img.png);
+    height: 13vh;
+    width: 50%;
+    padding-top: 35px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.developerImage {
+    border: 3px solid white;
+}
+
+
+.iconSec {
+    background-color: #556ee6;
+}

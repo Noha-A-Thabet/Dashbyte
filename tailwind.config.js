@@ -7,6 +7,11 @@ export default {
       mont: ['Montserrat', 'sans-serif'],
       lemon: ['Lemon', 'serif']
     },
+    colors: {
+      lightPurple: "#d4dbf9",
+      darkPurple: "#556ee6"
+    },
+
   },
   plugins: [],
 }

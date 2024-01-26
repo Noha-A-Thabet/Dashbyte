@@ -4,11 +4,11 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav
-      className="navBar z-100 h-[60px] flex justify-between items-center"
+      className="navBar  z-100 h-[60px] flex justify-between items-center"
       style={{
         borderBottom: "1px solid lightgray",
         boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
-        position: "fixed",
+        position: "fixed", // Change from "sticky" to "fixed"
         top: "0px",
         left: "10.2vw",
         width: "89.5vw",
