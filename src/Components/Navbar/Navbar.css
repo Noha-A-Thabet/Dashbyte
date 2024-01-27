@@ -3,6 +3,23 @@
     outline: 0;
 }
 
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    /* visibility: hidden; */
+    opacity: 10;
+    font-size: 1.8rem;
+}
+
+header div,
+nav {
+    display: flex;
+    align-items: center;
+}
 
 /* Max-width:600px */
 @media (max-width:600px) {
@@ -10,8 +27,8 @@
         border: 2px solid pink;
         position: "fixed";
         top: 0 !important;
-        left: 140px !important;
-        width: calc(100vw - 145px) !important;
+        left: 65px !important;
+        width: calc(100vw - 70px) !important;
     }
 
     .logoName {
@@ -23,7 +40,7 @@
 
     .searchBar {
         /* border: 2px solid greenyellow !important; */
-        width: 20vw !important;
+        width: 28vw !important;
         height: 5px !important;
     }
 
@@ -34,14 +51,15 @@
 }
 
 
+
 /* Min-width:600px */
 @media (min-width:600px) {
     .navBar {
         border: 2px solid purple;
         position: "fixed";
         top: 0 !important;
-        left: 140px !important;
-        width: calc(100vw - 145px) !important;
+        left: 65px !important;
+        width: calc(100vw - 70px) !important;
     }
 
     .logoName {
@@ -53,7 +71,7 @@
 
     .searchBar {
         /* border: 2px solid greenyellow !important; */
-        width: 23vw !important;
+        width: 28vw !important;
         height: 5px !important;
     }
 
@@ -123,3 +141,30 @@
 }
 
 /* min-width: 1200px */
+@media (min-width: 1200px) {
+    .navBar {
+        border: 2px solid tan;
+        position: "fixed";
+        top: 0 !important;
+        left: 180px !important;
+        width: calc(100vw - 184px) !important;
+    }
+
+    .logoName {
+        font-size: 20px !important;
+        /* border: 2px solid red; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .searchBar {
+        /* border: 2px solid greenyellow !important; */
+        width: 20vw !important;
+        height: 10px !important;
+    }
+
+    .iconsSec {
+        /* border: 2px solid yellow !important; */
+        width: 15vw !important
+    }
+}
