@@ -13,130 +13,169 @@ import { FaWifi } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
+
 const Sidebar = () => {
   return (
-    <section className="sideSec w-[150px] h-[100vh] fixed left-0 top-0 bg-[#2a3042] text-white p-6 ">
+    <nav
+      className="sideSec w-[150px] h-[100vh] fixed left-0 top-0 bg-[#2a3042] text-white p-6 "
+      style={{ color: "white" }}
+    >
       <div className="container mx-auto">
-        <h1
-          className="text-center font-lemon tracking-widest"
-          style={{ paddingBottom: "40px" }}
-        >
-          <Link to="/">Dashbyte</Link>
-        </h1>
         {/* home */}
-        <h2 className="font-mont flex  items-center p-[10px]">
-          <span>
-            <IoHomeOutline />
+        <h2
+          className="font-mont flex  items-center p-[15px]"
+          style={{ paddingTop: "200px" }}
+        >
+          <span className="linkIcon">
+            <Link to="/">
+              <IoHomeOutline />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="/">Home</Link>
           </span>
         </h2>
+
         {/* team */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <HiUsers />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="team">
+              <HiUsers />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="team">Team</Link>
           </span>
         </h2>
+
         {/* forms */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaWpforms />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Forms">
+              <FaWpforms />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Forms">Forms</Link>
           </span>
         </h2>
+
         {/* Email*/}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <MdEmail />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Email">
+              <MdEmail />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Email">Email</Link>
           </span>
         </h2>
+
         {/* jobs */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <MdWork />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Jobs">
+              <MdWork />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Jobs">Jobs</Link>
           </span>
         </h2>
+
         {/* Tasks */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaTasks />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Tasks">
+              <FaTasks />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Tasks">Tasks</Link>
           </span>
         </h2>
+
         {/* charts */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <IoBarChartSharp />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Charts">
+              <IoBarChartSharp />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Charts"> Charts</Link>
           </span>
         </h2>
+
         {/* blogs */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <IoDocument />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Blogs">
+              <IoDocument />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Blogs"> Blogs</Link>
           </span>
         </h2>
+
         {/* maps */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <SiGooglemaps />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Maps">
+              <SiGooglemaps />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Maps"> Maps</Link>
           </span>
         </h2>
+
         {/* Invoices */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaFileInvoiceDollar />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Invoices">
+              <FaFileInvoiceDollar />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Invoices"> Invoices</Link>
           </span>
         </h2>
+
         {/* Projects */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <AiOutlineFundProjectionScreen />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Projects">
+              <AiOutlineFundProjectionScreen />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Projects">Projects</Link>
           </span>
         </h2>
+
         {/* calendars */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaRegCalendarAlt />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="calendars">
+              <FaRegCalendarAlt />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="calendars">Calendars</Link>
           </span>
         </h2>
+
         {/* contacts */}
-        <h2 className="font-mont flex items-center p-[10px]">
-          <span>
-            <FaWifi />
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Contacts">
+              <FaWifi />
+            </Link>
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Contacts"> Contacts</Link>
           </span>
         </h2>
@@ -146,7 +185,7 @@ const Sidebar = () => {
           </h3>
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 export default Sidebar;

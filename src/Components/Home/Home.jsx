@@ -1,7 +1,10 @@
-// import Sidebar from "../Sidebar/Sidebar";
-
+import Dashboard from "../Dashboard/Dashboard";
 const Home = () => {
-  return <div>home</div>;
+  return (
+    <div>
+      <Dashboard />
+    </div>
+  );
 };
 
 export default Home;

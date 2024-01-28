@@ -1,0 +1,607 @@
+.profileImg {
+    background-image: url(../../assets/profile-img.png);
+    height: 13vh;
+    width: 50%;
+    padding-top: 35px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.developerImage {
+    border: 3px solid white;
+}
+
+
+.iconSec {
+    background-color: #556ee6;
+}
+
+
+/* Media Query */
+
+/* Max-width:600px */
+@media (max-width:600px) {
+    .welocmeTxt {
+        /* border: 2px solid green; */
+        width: calc(100vw - 83px) !important;
+        /* margin-left: -1px !important; */
+    }
+
+
+    .parentDash {
+        /* border: 1px solid purple !important; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 65px !important;
+        width: calc(100vw - 100px) !important;
+        height: 70vh !important;
+    }
+
+    .welcomeSec {
+        /* border: 2px solid yellow !important; */
+        width: 100% !important;
+        height: 70vh !important;
+    }
+
+
+    .welcomeBack {
+        height: 40vh !important;
+        /* border: 2px solid pink !important; */
+
+    }
+
+    .developerInfo {
+        /* border: 2px solid green !important; */
+        height: 15vh !important
+    }
+
+    .developerInfo button {
+        height: 5vh !important;
+        width: 15vh !important;
+    }
+
+    .monthlySec {
+        /* border: 2px solid hotPink; */
+        height: 27vh !important
+    }
+
+    .monthlySec button {
+        height: 5vh !important;
+        width: 15vh;
+    }
+
+    .ordersChartsDiv {
+        /* border: 4px solid fuchsia !important; */
+        margin-left: -6px !important;
+        width: calc(100vw - 95px) !important;
+        height: 95vh !important
+    }
+
+    .orderSec {
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 16vh !important
+    }
+
+    .chartSec {
+        /* border: 5px solid tomato !important; */
+        width: calc(100vw - 98px) !important;
+
+    }
+
+    .orders {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+
+    .revenu {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price h2 {
+        width: 20px !important;
+        /* font-size: 10px; */
+    }
+
+    .bar {
+        /* border: 3px solid yellow !important; */
+        width: 450px !important;
+        margin-top: -120px,
+
+    }
+}
+
+
+/* Min-width:600px */
+@media (min-width:600px) {
+    .welocmeTxt {
+        /* border: 2px solid green; */
+        width: calc(100vw - 82px) !important;
+        /* margin-left: -1px !important; */
+        margin-top: -4px !important;
+    }
+
+    .parentDash {
+        /* border: 7px solid purple !important; */
+        display: flex;
+        flex-direction: column;
+        width: 0vw !important;
+        margin-left: 65px !important;
+        width: calc(100vw - 83px) !important;
+        height: 70vh !important;
+    }
+
+    .welcomeSec {
+        /* border: 2px solid yellow !important; */
+        width: 100% !important;
+        height: 70vh !important;
+    }
+
+
+    .welcomeBack {
+        height: 40vh !important;
+        /* border: 2px solid pink !important; */
+
+    }
+
+    .developerInfo {
+        /* border: 2px solid green !important; */
+        height: 15vh !important
+    }
+
+    .developerInfo button {
+        height: 5vh !important;
+        width: 15vh !important;
+    }
+
+    .monthlySec {
+        /* border: 2px solid hotPink; */
+        height: 27vh !important;
+        margin-top: 8px !important;
+        /* margin-bottom: -18px !important; */
+    }
+
+    .monthlySec button {
+        height: 5vh !important;
+        width: 15vh;
+    }
+
+    .ordersChartsDiv {
+        /* border: 4px solid fuchsia !important; */
+        margin-left: -6px !important;
+        width: calc(100vw - 95px) !important;
+        height: 95vh !important;
+        margin-top: 10px !important
+    }
+
+    .orderSec {
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 16vh !important;
+    }
+
+    .chartSec {
+        /* border: 5px solid tomato !important; */
+        width: calc(100vw - 98px) !important;
+
+    }
+
+    .orders {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+
+    .revenu {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price h2 {
+        width: 20px !important;
+        /* font-size: 10px; */
+    }
+
+    .bar {
+        /* border: 3px solid yellow !important; */
+        width: 450px !important;
+        margin-top: -120px,
+
+    }
+}
+
+
+
+/* Min-width:768px */
+@media (min-width:768px) {
+    .welocmeTxt {
+        /* border: 2px solid green; */
+        width: calc(100vw - 84px) !important;
+        /* margin-left: -29px !important; */
+        margin-top: 1px !important
+    }
+
+    .parentDash {
+        /* border: 1px solid black !important; */
+        display: flex;
+        flex-direction: column;
+        width: 0vw !important;
+        margin-left: 63px !important;
+        width: calc(100vw - 90px) !important;
+        height: 70vh !important;
+    }
+
+    .welcomeSec {
+        /* border: 2px solid red !important; */
+        width: calc(100vw - 200px) !important;
+        height: 70vh !important;
+        margin-top: -5px;
+    }
+
+    .welcomeBack {
+        height: 40vh !important;
+        /* border: 2px solid pink !important; */
+        width: calc(100vw - 130px) !important;
+
+    }
+
+    .developerSec {
+        /* border: 2px solid blue !important; */
+        width: calc(100vw - 117px) !important;
+        background-color: white !important;
+        margin-left: 2px !important
+    }
+
+    .developerInfo {
+        /* border: 2px solid green !important; */
+        height: 15vh !important;
+        width: calc(100vw - 120px) !important;
+        margin-left: -13px;
+    }
+
+    .developerInfo button {
+        height: 5vh !important;
+        width: 15vh !important;
+    }
+
+    .monthlySec {
+        /* border: 2px solid hotPink; */
+        height: 27vh !important;
+        width: calc(100vw - 115px) !important;
+        margin-top: 10px !important;
+        margin-bottom: 30px !important;
+        background-color: white !important;
+    }
+
+    .monthlySec button {
+        height: 5vh !important;
+        width: 15vh;
+    }
+
+    .ordersChartsDiv {
+        /* border: 4px solid fuchsia !important; */
+        margin-left: 10px !important;
+        width: calc(100vw - 102px) !important;
+        height: 95vh !important
+    }
+
+    .orderSec {
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 16vh !important;
+        width: calc(100vw - 102px) !important;
+    }
+
+    .chartSec {
+        /* border: 5px solid tomato !important; */
+        width: calc(100vw - 102px) !important;
+        margin-left: -10px !important;
+        /* margin-top: -120px !important */
+    }
+
+    .orders {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+
+    .revenu {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price h2 {
+        width: 20px !important;
+        /* font-size: 10px; */
+    }
+
+
+    .bar {
+        /* border: 3px solid yellow !important; */
+        width: 600px !important;
+        height: 300px !important;
+        margin-top: 12px;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+}
+
+
+
+/* Min-width:992px */
+@media (min-width:992px) {
+    .welocmeTxt {
+        /* border: 2px solid green; */
+        width: calc(100vw - 177px) !important;
+        margin-left: -1px !important;
+    }
+
+    .parentDash {
+        /* border: 3px solid black !important; */
+        display: flex;
+        flex-direction: column;
+        width: 0vw !important;
+        margin-left: 161px !important;
+        width: calc(100vw - 200px) !important;
+        height: 70vh !important;
+    }
+
+    .welcomeSec {
+        /* border: 2px solid red !important; */
+        width: calc(100vw - 200px) !important;
+        height: 70vh !important;
+    }
+
+    .welcomeBack {
+        height: 40vh !important;
+        /* border: 2px solid pink !important; */
+        width: calc(100vw - 210px) !important;
+
+    }
+
+    .developerInfo {
+        /* border: 2px solid green !important; */
+        height: 15vh !important;
+        width: calc(100vw - 220px) !important;
+        margin-left: -10px;
+    }
+
+    .developerSec {
+        /* border: 2px solid red !important; */
+        width: calc(100vw - 230px) !important;
+    }
+
+    .developerInfo button {
+        height: 5vh !important;
+        width: 15vh !important;
+    }
+
+    .monthlySec {
+        /* border: 2px solid hotPink; */
+        height: 27vh !important;
+        width: calc(100vw - 220px) !important;
+
+    }
+
+    .monthlySec button {
+        height: 5vh !important;
+        width: 15vh;
+    }
+
+    .chartSec {
+        /* border: 5px solid yellow !important; */
+        width: calc(100vw - 90px) !important;
+        margin-left: -40px !important
+    }
+
+    .ordersChartsDiv {
+        /* border: 4px solid fuchsia !important; */
+        margin-left: 3px !important;
+        width: calc(100vw - 215px) !important;
+        height: 95vh !important;
+        margin-top: 10px !important
+    }
+
+    .orderSec {
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 16vh !important;
+        width: calc(100vw - 210px) !important;
+    }
+
+    .chartSec {
+        /* border: 5px solid tomato !important; */
+        width: calc(100vw - 230px) !important;
+        margin-left: 15px !important;
+    }
+
+    .orders {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+
+    .revenu {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price h2 {
+        width: 20px !important;
+        /* font-size: 10px; */
+    }
+
+
+    .bar {
+        /* border: 3px solid yellow !important; */
+        width: 600px !important;
+        height: 300px !important;
+        margin-top: 12px;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+}
+
+
+/* Min-width:1200px */
+@media (min-width:1200px) {
+    .welocmeTxt {
+        /* border: 2px solid green; */
+        width: calc(100vw - 175px) !important;
+        margin-left: -1px !important;
+    }
+
+    .profileImg {
+        height: 16vh !important;
+        width: 30% !important;
+    }
+
+    .parentDash {
+        /* border: 1px solid black !important; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 161px !important;
+        width: calc(100vw - 178px) !important;
+        height: 70vh !important;
+    }
+
+    .welcomeSec {
+        /* border: 2px solid red !important; */
+        width: calc(100vw - 176px) !important;
+        height: 70vh !important;
+        margin-left: -2px !important
+    }
+
+    .welcomeBack {
+        height: 40vh !important;
+        /* border: 2px solid pink !important; */
+        width: calc(100vw - 200px) !important;
+
+    }
+
+
+    .developerSec {
+        /* border: 1px solid red !important; */
+        width: calc(100vw - 210px) !important;
+
+    }
+
+    .developerInfo {
+        /* border: 2px solid green !important; */
+        height: 15vh !important;
+        width: calc(100vw - 212px) !important;
+        margin-left: -10px;
+        font-size: 18px;
+        margin-top: 10px;
+        /* background-color: white !important; */
+    }
+
+    .developerInfo button {
+        height: 5vh !important;
+        width: 17vh !important;
+        font-size: 15px !important;
+    }
+
+    .monthlySec {
+        /* border: 2px solid hotPink; */
+        height: 27vh !important;
+        width: calc(100vw - 210px) !important;
+
+    }
+
+    .monthlySec button {
+        height: 5vh !important;
+        width: 15vh;
+    }
+
+    .ordersChartsDiv {
+        /* border: 4px solid fuchsia !important; */
+        margin-left: -3px !important;
+        width: calc(100vw - 200px) !important;
+        height: 95vh !important
+    }
+
+    .orderSec {
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 16vh !important;
+        width: calc(100vw - 200px) !important;
+    }
+
+    .chartSec {
+        /* border: 5px solid tomato !important; */
+        width: calc(100vw - 220px) !important;
+        margin-left: 15px !important;
+    }
+
+    .orders {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+
+    .revenu {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price {
+        /* border: 2px solid red; */
+        width: 20vw !important;
+    }
+
+    .price h2 {
+        width: 20px !important;
+        /* font-size: 10px; */
+    }
+
+
+    .bar {
+        /* border: 3px solid yellow !important; */
+        width: 1000px !important;
+        height: 300px !important;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+}
