@@ -8,11 +8,9 @@ import Charts from "./Charts";
 const Dashboard = () => {
   return (
     <section
-      className=" mt-[100px] ml-[100px] grid grid-cols-2 gap-0"
+      className="parentDash mt-[100px]  grid grid-cols-2 gap-0"
       style={{
-        border: "2px solid red",
         marginTop: "4px",
-        marginLeft: "202px",
         height: "65vh",
         width: "84.9vw",
         backgroundColor: "#f4f4f8",
@@ -20,22 +18,21 @@ const Dashboard = () => {
     >
       {/* welcome section main  */}
       <section
-        className="grid grid-rows-2 gap-[85px]"
+        className="welcomeSec grid grid-rows-2 gap-[85px]"
         style={{
-          border: "2px solid purple",
           width: "40vw",
           height: "65vh",
         }}
       >
         {/* welcomeBack div  first  */}
         <div
-          className="grid grid-row-2 gap-0 rounded-lg"
+          className=" welcomeBack grid grid-row-2 gap-0 rounded-lg"
           style={{
             height: "35vh",
             backgroundColor: "white",
           }}
         >
-          <div className="w-[100%] bg-lightPurple flex flex-row justify-between items-center ">
+          <div className="welocmeTxt w-[100%] bg-lightPurple flex flex-row justify-between items-center ">
             {/* welcome text */}
             <div className=" flex justify-center flex-col items-center pl-[30px] ">
               <h2 className="text-darkPurple font-bold text-xl">
@@ -84,7 +81,7 @@ const Dashboard = () => {
 
         {/* monthly Sec  second*/}
         <div
-          className="grid grid-cols-2 gap-4 pl-[30px] h-[26vh] rounded-lg"
+          className="monthlySec grid grid-cols-2 gap-4 pl-[30px] h-[26vh] rounded-lg"
           style={{ backgroundColor: "white" }}
         >
           {/* monthly div  */}
@@ -129,19 +126,14 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
-
       {/* second div */}
-
       {/* main  */}
-      <section
-        className="grid grid-rows-2 h-[62vh] w-[42vw]"
-        style={{ border: "2px solid green" }}
-      >
+      <section className="ordersChartsDiv grid grid-rows-2 h-[62vh] w-[42vw]">
         {/* first row */}
-        <div className="grid grid-cols-3 gap-2 h-[10vh] ">
+        <div className="orderSec grid grid-cols-3 gap-2 h-[10vh] ">
           {/* orders */}
           <section
-            className="flex justify-around items-center rounded-lg"
+            className="orders flex justify-around items-center rounded-lg"
             style={{ backgroundColor: "white", width: "13vw" }}
           >
             <div>
@@ -155,10 +147,9 @@ const Dashboard = () => {
               />
             </div>
           </section>
-
           {/* revenu */}
           <section
-            className="flex justify-around items-center rounded-lg"
+            className=" revenu flex justify-around items-center rounded-lg"
             style={{ backgroundColor: "white", width: "13vw" }}
           >
             <div>
@@ -172,14 +163,13 @@ const Dashboard = () => {
               />
             </div>
           </section>
-
           {/* price */}
           <section
-            className="flex justify-around items-center rounded-lg"
+            className="price flex justify-around items-center rounded-lg"
             style={{ backgroundColor: "white", width: "13vw" }}
           >
             <div>
-              <h2 className="text-[#7480b2]">Average Price</h2>
+              <h2 className="text-[#7480b2]">Price</h2>
               <p className="font-bold">$16.2</p>
             </div>
             <div className="iconSec w-[40px] h-[40px] rounded-full flex items-center justify-center">
@@ -190,16 +180,14 @@ const Dashboard = () => {
             </div>
           </section>
         </div>
-
         {/* second row */}
         <div
           style={{
-            height: "51vh",
             marginTop: "-140px",
-            width: "41vw",
+
             backgroundColor: "white",
           }}
-          className="rounded-lg"
+          className="chartSec rounded-lg"
         >
           <Charts />
         </div>

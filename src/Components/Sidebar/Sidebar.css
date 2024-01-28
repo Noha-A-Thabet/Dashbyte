@@ -3,7 +3,7 @@
 }
 
 .sideSec {
-    border: 2px solid red !important;
+    /* border: 2px solid red !important; */
 }
 
 .sibeFooter {
@@ -17,7 +17,7 @@
 /* Max-width :600px */
 @media (max-width:600px) {
     .sideSec {
-        border: 2px solid green !important;
+        /* border: 2px solid green !important; */
         width: 15px;
     }
 
@@ -34,7 +34,7 @@
 /* Min-width :600px */
 @media (min-width:600px) {
     .sideSec {
-        border: 2px solid pink !important;
+        /* border: 2px solid pink !important; */
         width: 15px;
     }
 
@@ -52,18 +52,17 @@
 /* Min-width :768px */
 @media (min-width:768px) {
     .sideSec {
-        border: 2px solid yellowgreen;
-        width: 100px !important;
+        /* border: 2px solid pink !important; */
+        width: 15px;
     }
 
     .sideBarLink {
-        visibility: visible !important;
-        padding-left: 12px;
+        visibility: hidden;
     }
 
     .linkIcon {
         display: block !important;
-        margin: 0px;
+        margin: -10px;
     }
 }
 
@@ -71,12 +70,12 @@
 /* Min-width :992px */
 @media (min-width:992px) {
     .sideSec {
-        border: 2px solid orange;
-        width: 130px !important;
+        /* border: 2px solid orange; */
+        width: 110px !important;
     }
 
     .sideBarLink {
         visibility: visible !important;
-        padding-left: 16px;
+        padding-left: 20px;
     }
 }

@@ -1,5 +1,5 @@
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
-
+import "./Dashboard.css";
 const Charts = () => {
   const data = [
     { name: "Jan", Email: 20 },
@@ -16,7 +16,7 @@ const Charts = () => {
   ];
   return (
     <>
-      <div className="grid grid-cols-2">
+      <div className="emailSent grid grid-cols-2">
         <h2 className="p-[15px] font-bold">Email Sent</h2>
         <div className="grid grid-cols-3 gap-2 p-[15px] font-bold">
           <h4>Week</h4>
@@ -32,7 +32,7 @@ const Charts = () => {
           </h4>
         </div>
       </div>
-      <BarChart width={550} height={330} data={data} className="pt-[20px]">
+      <BarChart width={500} height={330} data={data} className="bar pt-[20px]">
         <Bar type="monotone" dataKey="Email" strokeWidth={3} fill="#8884d8" />
         <XAxis dataKey="name" />
         <YAxis />
