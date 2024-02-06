@@ -1,0 +1,7 @@
+.socialParent {
+    /* border: 1px solid red; */
+    margin-top: 550px;
+    width: calc(100vw - 180px) !;
+    margin-left: 158px;
+    background-color: #f4f4f8;
+}

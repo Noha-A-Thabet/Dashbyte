@@ -8,7 +8,7 @@ import Charts from "./Charts";
 const Dashboard = () => {
   return (
     <section
-      className="parentDash mt-[100px]  grid grid-cols-2 gap-0"
+      className="relative parentDash mt-[100px]  grid grid-cols-2 gap-0"
       style={{
         marginTop: "4px",
         height: "65vh",
