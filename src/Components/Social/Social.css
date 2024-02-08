@@ -1,0 +1,379 @@
+.socialParent {
+    /* border: 1px solid red; */
+    margin-top: 550px;
+    width: calc(100vw - 180px);
+    margin-left: 158px;
+    background-color: #f4f4f8;
+}
+
+/* Media Queries */
+
+/* Max-width:600px */
+@media screen and (max-width:600px) {
+    .socialParent {
+        border: 2px solid red !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 65px !important;
+        width: 78vw !important;
+        height: 160vh !important;
+        padding-right: 20px !important;
+    }
+
+    .socialSource {
+        border: 2px solid green !important;
+        height: 40vh !important;
+        padding-bottom: 20px !important;
+    }
+
+    .socialParent p {
+        width: 400px !important
+    }
+
+    .activity {
+        border: 2px solid pink !important;
+        height: 50vh !important;
+        padding-bottom: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .activitSecs {
+        /* border: 2px solid red !important; */
+        width: 100px !important
+    }
+
+
+
+
+
+    .topCities {
+        /* border: 2px solid green !important; */
+        height: 35vh !important;
+        padding-bottom: 20px !important;
+    }
+
+    .cities {
+        /* border: 2px solid red !important; */
+        width: 300px !important;
+        margin-left: -45px !important;
+    }
+
+    .blueChart {
+        width: 180px !important
+    }
+}
+
+/* min-width:600px */
+@media screen and (min-width:600px) {
+    .socialParent {
+        /* border: 2px solid red !important; */
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 65px !important;
+        width: 80vw !important;
+        height: 140vh !important;
+        padding-right: 20px !important;
+    }
+
+    .socialSource {
+        /* border: 2px solid green !important; */
+        height: 40vh !important;
+        padding-bottom: 20px !important;
+    }
+
+    .socialParent p {
+        width: 400px !important
+    }
+
+    .activity {
+        /* border: 2px solid pink !important; */
+        height: 35vh !important;
+        padding-bottom: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .activitSecs {
+        /* border: 2px solid red !important; */
+        width: 200px !important;
+    }
+
+
+    .topCities {
+        /* border: 2px solid green !important; */
+        height: 35vh !important;
+        padding-bottom: 20px !important;
+    }
+
+    .cities {
+        /* border: 2px solid red !important; */
+        width: 300px !important;
+        margin-left: -45px !important;
+    }
+
+    .blueChart {
+        width: 180px !important
+    }
+}
+
+
+/* min-width:768px */
+@media screen and (min-width:768px) {
+    .socialParent {
+        /* border: 2px solid red !important; */
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 65px !important;
+        width: calc(100vw - 122px) !important;
+        height: 140vh !important;
+        padding-right: 20px !important;
+    }
+
+    .socialSource {
+        /* border: 2px solid green !important; */
+        height: 40vh !important;
+        padding-bottom: 20px !important;
+    }
+
+    .socialParent p {
+        width: 400px !important
+    }
+
+    .activity {
+        /* border: 2px solid pink !important; */
+        height: 40vh !important;
+        padding-bottom: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .activitSecs {
+        /* border: 2px solid red !important; */
+        width: 300px !important;
+        font-size: 18px !important;
+    }
+
+    .activitySpan {
+        /* border: 2px solid red !important; */
+        font-size: 16px;
+        width: 500px
+    }
+
+    .topCities {
+        /* border: 2px solid green !important; */
+        height: 35vh !important;
+        padding-bottom: 20px !important;
+    }
+
+    .cities {
+        /* border: 2px solid red !important; */
+        width: 600px !important;
+        margin-left: 2px !important;
+    }
+
+    .blueChart {
+        width: 200px !important
+    }
+}
+
+
+/* min-width:992px */
+@media screen and (min-width:992px) {
+    .socialParent {
+        /* border: 2px solid red !important; */
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 158px !important;
+        width: calc(100vw - 222px) !important;
+        height: 140vh !important;
+        padding-right: 20px !important;
+    }
+
+    .socialSource {
+        /* border: 2px solid green !important; */
+        height: 40vh !important;
+        padding-bottom: 20px !important;
+        padding-left: 50px !important;
+
+    }
+
+    .socialParent p {
+        width: 400px !important;
+    }
+
+
+
+    .activity {
+        /* border: 2px solid pink !important; */
+        height: 60vh !important;
+        width: calc(100vw - 290px) !important;
+        padding-bottom: 20px !important;
+        padding-right: 20px !important;
+        padding-left: 50px !important;
+    }
+
+    .activityDate {
+        width: 75px !important
+    }
+
+    .activitSecs {
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: space-evenly !important;
+        justify-items: center !important;
+        margin-top: 10px !important;
+        width: 500px !important;
+        font-size: 18px !important;
+        margin-left: -10px !important;
+        padding-left: 0px !important;
+        /* margin-top: -10px !important; */
+
+        /* text-align: center !important; */
+
+    }
+
+    .activity .arrow {
+        /* border: 2px solid black !important; */
+        width: 60px !important;
+        margin-right: -15px !important;
+        color: #9ca3ea !important;
+        font-size: 20px !important;
+    }
+
+
+    .activitySpan {
+        /* border: 2px solid red !important; */
+        font-size: 16px;
+        width: 400px;
+        margin-left: 10px !important;
+    }
+
+
+    .topCities {
+        /* border: 2px solid green !important; */
+        height: 35vh !important;
+        padding-bottom: 40px !important;
+        padding-left: 50px !important;
+
+    }
+
+    .cities {
+        /* border: 2px solid red !important; */
+        width: 600px !important;
+        margin-left: 72px !important;
+        margin-top: 10px;
+    }
+
+    .blueChart {
+        width: 200px !important
+    }
+}
+
+/* min-width:1200px */
+@media screen and (min-width:1200px) {
+    .socialParent {
+        box-sizing: border-box;
+        /* border: 2px solid red !important; */
+        margin-left: 158px !important;
+        width: calc(100vw - 175px) !important;
+        height: 53vh !important;
+        padding-right: 20px !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        margin-right: 0 !important;
+        background-color: #f4f4f8;
+    }
+
+    .socialSource {
+        /* border: 2px solid green !important; */
+        height: 40vh !important;
+        padding-bottom: 20px !important;
+        padding-left: 50px !important;
+        width: 500px !important;
+    }
+
+    .socialParent p {
+        width: 300px !important;
+        padding-top: 20px;
+
+    }
+
+    .activity {
+        /* border: 2px solid pink !important; */
+        height: 40vh !important;
+        padding-bottom: 20px !important;
+        padding-right: 20px !important;
+        padding-left: 50px !important;
+        width: 500px !important
+    }
+
+    .activityDate {
+        width: 75px !important
+    }
+
+    .activitSecs {
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: space-evenly !important;
+        justify-items: center !important;
+        margin-top: 10px !important;
+        width: 500px !important;
+        font-size: 18px !important;
+        margin-left: -10px !important;
+        padding-left: 0px !important;
+    }
+
+    .activity .arrow {
+        /* border: 2px solid black !important; */
+        width: 60px !important;
+        margin-right: -15px !important;
+        color: #9ca3ea !important;
+        font-size: 20px !important;
+    }
+
+
+    .activitySpan {
+        /* border: 2px solid red !important; */
+        font-size: 16px;
+        width: 400px;
+        margin-left: 10px !important;
+    }
+
+    .topCities {
+        /* border: 2px solid green !important; */
+        height: 38vh !important;
+        padding-bottom: 40px !important;
+        width: 68vw !important;
+        padding-left: 50px !important;
+        margin-left: 110px !important;
+    }
+
+    .cities {
+        /* border: 2px solid red !important; */
+        width: 600px !important;
+        margin-left: -20px !important;
+        margin-top: 10px;
+        height: 200px
+    }
+
+    .blueChart {
+        width: 300px !important
+    }
+
+    .greenChart {
+        width: 250px
+    }
+
+    .orangeChart {
+        width: 200px
+    }
+
+    .yellowChart {
+        width: 150px
+    }
+
+    .wrappingThirdSec {
+        /* border: 2px solid red; */
+        margin-left: 160px !important;
+        height: 52vh !important;
+        background-color: #f4f4f8;
+    }
+}

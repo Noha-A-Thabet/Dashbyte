@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <header>
         <nav
-          className="navBar  z-100 h-[60px] flex justify-between items-center xl:w-[80vw] "
+          className="navBar  z-200 h-[60px] flex justify-between items-center xl:w-[80vw] "
           style={{
             borderBottom: "1px solid lightgray",
             boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
