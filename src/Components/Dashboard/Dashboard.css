@@ -90,7 +90,8 @@
     .chartSec {
         /* border: 5px solid tomato !important; */
         width: calc(100vw - 98px) !important;
-
+        padding-top: 5px !important;
+        margin-left: 10px !important;
     }
 
     .orders {
@@ -179,7 +180,7 @@
 
     .ordersChartsDiv {
         /* border: 4px solid fuchsia !important; */
-        margin-left: -6px !important;
+        margin-left: -63x !important;
         width: calc(100vw - 95px) !important;
         height: 95vh !important;
         margin-top: 10px !important
