@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Social = () => {
   return (
-    <>
+    <div className="bg-[#f4f4f8]">
       <section className="socialParent grid grid-cols-3 gap-4 h-[31vh] pt-[20px] pl-[20px] pb-[20px]">
         {/* First */}
         <div
@@ -176,7 +176,7 @@ const Social = () => {
           </section>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
