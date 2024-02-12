@@ -1,5 +1,5 @@
 import { FaRegSquareFull } from "react-icons/fa6";
-// sm:border-4 sm:border-indigo-500/75
+
 const Transaction = () => {
   return (
     <div className="wrappingTable bg-[#f4f4f8]  w-[90.5vw]  mx-[165px] pb-[25px] sm:w-[70vw] md:w-[70vw]  h-[55vh]">
