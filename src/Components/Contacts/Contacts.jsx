@@ -1,25 +1,22 @@
-import { FaRegSquareFull } from "react-icons/fa6";
 import { FaRegMessage } from "react-icons/fa6";
-import { CgProfile } from "react-icons/cg";
 
 const Contacts = () => {
   return (
-    <section className="ml-[170px] border-2 border-black-600 mt-[10px]">
-      <div className="wrappingTable bg-[#f4f4f8]  w-[90.5vw]  mx-[165px] pb-[25px] sm:w-[70vw] md:w-[70vw]  h-[55vh]">
-        <table
-          className=" mx-[20px] bg-[white] w-[90vw] h-[45vh] table-auto	border-collapse
-        sm:w-[87vw] sm:ml-[-100px]  sm:mx-auto sm:h-[65vh] sm:overflow-scroll
-         lg:mx-[-10px]  lg:w-[83vw]
-         xl:w-[86vw] xl:mx-[-10px]
-2xl:w-[90vw] 2xl:mx-[-1px]
-  "
-        >
-          <caption className="tracking-wide	 caption-top bg-[white] p-[20px] text-left	font-bold sm:text-md ">
-            Latest Transaction
+    <section
+      className="ml-[170px] mt-[1px] "
+      style={{ border: "2px solis green" }}
+    >
+      <div
+        className="wrappingTable  w-[80.5vw] h-[20vh] pb-[25px]  ml-[12px] "
+        style={{ margin: "0 auto" }}
+      >
+        <table className=" mx-[0px] bg-[white] w-[90vw] h-[35vh] table-auto	border-collapse sm:w-[85vw] sm:ml-[-90px] lg:ml-[-1vw] lg:w-[80vw] 2xl:w-[85vw] 2xl:ml-[-50px] 2xl:text-xl">
+          <caption className="tracking-wide	 caption-top bg-[white] p-[12px] text-left	font-bold sm:text-md ">
+            USERS LIST
           </caption>
           <thead className="bg-[white]">
             <tr
-              className="text-center h-[40px] bg-[#eff2f7]"
+              className="text-center h-[50px] bg-[#eff2f7]"
               style={{ borderBottom: "1px solid lightGray" }}
             >
               <th border className="pl-[10px]">
@@ -35,14 +32,14 @@ const Contacts = () => {
             </tr>
           </thead>
 
-          <tbody>
+          <tbody className="h-[75vh]">
             <tr
               style={{ borderBottom: "1px solid lightGray" }}
-              className="text-center h-[40px]"
+              className="text-center h-[50px] "
             >
-              <td className="pl-[10px]">
+              <td className="pl-[10px] flex justify-center pt-[20px] h-[22px]">
                 <div
-                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center "
+                  className="w-[45px] h-[45px] rounded-full bg-cover bg-center mt-[-12px] "
                   style={{
                     backgroundImage: "url('../src/assets/avatar-2.jpg')",
                   }}
@@ -53,16 +50,19 @@ const Contacts = () => {
               </td>
               <td className="sm:text-sm">colin@skote.com </td>
               <td className="sm:text-sm">
-                <span>PHP</span>
-                <span>Java</span>
-                <span>1 more</span>
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Photoshop
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block mt-[10px]">
+                    illustrator
+                  </span>
+                </div>
               </td>
               <td className="sm:text-sm text-[gray]">136</td>
               <td className="sm:text-sm ">
-                <div className="flex justify-between">
+                <div className="flex justify-center">
                   <FaRegMessage />
-
-                  <CgProfile />
                 </div>
               </td>
             </tr>
@@ -71,29 +71,32 @@ const Contacts = () => {
               style={{ borderBottom: "1px solid lightGray" }}
               className="text-center h-[40px]"
             >
-              <td className="pl-[10px]">
+              <td className="pl-[10px] flex justify-center pt-[20px]">
                 <div
-                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center "
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
                   style={{
-                    backgroundImage: "url('../src/assets/avatar-2.jpg')",
+                    backgroundImage: "url('../src/assets/avatar-3.jpg')",
                   }}
                 ></div>
               </td>
               <td className="sm:text-sm font-bold text-[gray] ">
-                Colin Melton
+                Rafael Morales
               </td>
-              <td className="sm:text-sm">colin@skote.com </td>
+              <td className="sm:text-sm">Rafael@skote.com </td>
               <td className="sm:text-sm">
-                <span>PHP</span>
-                <span>Java</span>
-                <span>1 more</span>
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    PHP
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Ruby
+                  </span>
+                </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">112</td>
               <td className="sm:text-sm ">
-                <div className="flex justify-between">
+                <div className="flex justify-center">
                   <FaRegMessage />
-
-                  <CgProfile />
                 </div>
               </td>
             </tr>
@@ -102,124 +105,278 @@ const Contacts = () => {
               style={{ borderBottom: "1px solid lightGray" }}
               className="text-center h-[40px]"
             >
-              <td className="pl-[10px]">
+              <td className="pl-[10px] flex justify-center pt-[20px]">
                 <div
-                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center "
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
                   style={{
-                    backgroundImage: "url('../src/assets/avatar-2.jpg')",
+                    backgroundImage: "url('../src/assets/avatar-1.jpg')",
                   }}
                 ></div>
               </td>
               <td className="sm:text-sm font-bold text-[gray] ">
-                Colin Melton
+                John Santiago
               </td>
-              <td className="sm:text-sm">colin@skote.com </td>
+              <td className="sm:text-sm">John @skote.com </td>
               <td className="sm:text-sm">
-                <span>PHP</span>
-                <span>Java</span>
-                <span>1 more</span>
-              </td>
-              <td className="sm:text-sm text-[gray]">136</td>
-              <td className="sm:text-sm ">
-                <div className="flex justify-between">
-                  <FaRegMessage />
-
-                  <CgProfile />
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    PHP
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Ruby
+                  </span>
                 </div>
               </td>
-            </tr>
-            {/* /fourth/ */}
-            <tr
-              style={{ borderBottom: "1px solid lightGray" }}
-              className="text-center h-[40px]"
-            >
-              <td className="pl-[10px]">
-                <div
-                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center "
-                  style={{
-                    backgroundImage: "url('../src/assets/avatar-2.jpg')",
-                  }}
-                ></div>
-              </td>
-              <td className="sm:text-sm font-bold text-[gray] ">
-                Colin Melton
-              </td>
-              <td className="sm:text-sm">colin@skote.com </td>
-              <td className="sm:text-sm">
-                <span>PHP</span>
-                <span>Java</span>
-                <span>1 more</span>
-              </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">112</td>
               <td className="sm:text-sm ">
-                <div className="flex justify-between">
+                <div className="flex justify-center">
                   <FaRegMessage />
-
-                  <CgProfile />
                 </div>
               </td>
             </tr>
 
-            {/* /fifth/ */}
+            {/* /four/ */}
             <tr
               style={{ borderBottom: "1px solid lightGray" }}
               className="text-center h-[40px]"
             >
-              <td className="pl-[10px]">
+              <td className="pl-[10px] flex justify-center pt-[20px]">
                 <div
-                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center "
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
                   style={{
-                    backgroundImage: "url('../src/assets/avatar-2.jpg')",
+                    backgroundImage: "url('../src/assets/avatar-4.jpg')",
                   }}
                 ></div>
               </td>
               <td className="sm:text-sm font-bold text-[gray] ">
-                Colin Melton
+                Shirley Smith
               </td>
-              <td className="sm:text-sm">colin@skote.com </td>
+              <td className="sm:text-sm"> Shirley@skote.com </td>
               <td className="sm:text-sm">
-                <span>PHP</span>
-                <span>Java</span>
-                <span>1 more</span>
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    PHP
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Ruby
+                  </span>
+                </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">112</td>
               <td className="sm:text-sm ">
-                <div className="flex justify-between">
+                <div className="flex justify-center">
                   <FaRegMessage />
-
-                  <CgProfile />
                 </div>
               </td>
             </tr>
 
-            {/* /sixth/ */}
+            {/* /five/ */}
             <tr
               style={{ borderBottom: "1px solid lightGray" }}
               className="text-center h-[40px]"
             >
-              <td className="pl-[10px]">
+              <td className="pl-[10px] flex justify-center pt-[20px]">
                 <div
-                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center "
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
                   style={{
-                    backgroundImage: "url('../src/assets/avatar-2.jpg')",
+                    backgroundImage: "url('../src/assets/avatar-5.jpg')",
                   }}
                 ></div>
               </td>
               <td className="sm:text-sm font-bold text-[gray] ">
-                Colin Melton
+                Allison Ellie
               </td>
-              <td className="sm:text-sm">colin@skote.com </td>
+              <td className="sm:text-sm"> Allison@skote.com </td>
               <td className="sm:text-sm">
-                <span>PHP</span>
-                <span>Java</span>
-                <span>1 more</span>
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    React
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Redux
+                  </span>
+                </div>
               </td>
               <td className="sm:text-sm text-[gray]">136</td>
               <td className="sm:text-sm ">
-                <div className="flex justify-between">
+                <div className="flex justify-center">
                   <FaRegMessage />
+                </div>
+              </td>
+            </tr>
+            {/* /six/ */}
+            <tr
+              style={{ borderBottom: "1px solid lightGray" }}
+              className="text-center h-[40px]"
+            >
+              <td className="pl-[10px] flex justify-center pt-[20px]">
+                <div
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
+                  style={{
+                    backgroundImage: "url('../src/assets/avatar-6.jpg')",
+                  }}
+                ></div>
+              </td>
+              <td className="sm:text-sm font-bold text-[gray] ">
+                Mark Ellison
+              </td>
+              <td className="sm:text-sm">Mark @skote.com </td>
+              <td className="sm:text-sm">
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    JS
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Css
+                  </span>
+                </div>
+              </td>
+              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm ">
+                <div className="flex justify-center">
+                  <FaRegMessage />
+                </div>
+              </td>
+            </tr>
 
-                  <CgProfile />
+            {/* /seven/ */}
+            <tr
+              style={{ borderBottom: "1px solid lightGray" }}
+              className="text-center h-[40px]"
+            >
+              <td className="pl-[10px] flex justify-center pt-[20px]">
+                <div
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
+                  style={{
+                    backgroundImage:
+                      "url('../src/assets/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg')",
+                  }}
+                ></div>
+              </td>
+              <td className="sm:text-sm font-bold text-[gray] ">
+                Amelia Peyton
+              </td>
+              <td className="sm:text-sm"> Amelia@skote.com</td>
+              <td className="sm:text-sm">
+                <div className="grid grid-cols-1">
+                  <span></span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Html
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    CSS
+                  </span>
+                </div>
+              </td>
+              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm ">
+                <div className="flex justify-center">
+                  <FaRegMessage />
+                </div>
+              </td>
+            </tr>
+
+            {/* /eight/ */}
+            <tr
+              style={{ borderBottom: "1px solid lightGray" }}
+              className="text-center h-[40px]"
+            >
+              <td className="pl-[10px] flex justify-center pt-[20px]">
+                <div
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
+                  style={{
+                    backgroundImage:
+                      "url('../src/assets/rafaella-mendes-diniz-et_78QkMMQs-unsplash.jpg')",
+                  }}
+                ></div>
+              </td>
+              <td className="sm:text-sm font-bold text-[gray] ">
+                Ansley Brooke
+              </td>
+              <td className="sm:text-sm"> Ansley@skote.com </td>
+              <td className="sm:text-sm ">
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Ruby
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    PHP
+                  </span>
+                </div>
+              </td>
+              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm ">
+                <div className="flex justify-center">
+                  <FaRegMessage />
+                </div>
+              </td>
+            </tr>
+
+            {/* /nine/ */}
+            <tr
+              style={{ borderBottom: "1px solid lightGray" }}
+              className="text-center h-[40px]"
+            >
+              <td className="pl-[10px] flex justify-center pt-[20px]">
+                <div
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
+                  style={{
+                    backgroundImage:
+                      "url('../src/assets/ian-dooley-d1UPkiFd04A-unsplash.jpg')",
+                  }}
+                ></div>
+              </td>
+              <td className="sm:text-sm font-bold text-[gray] ">
+                David McHenry
+              </td>
+              <td className="sm:text-sm">david@skote.com </td>
+              <td className="sm:text-sm ">
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Ruby
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    PHP
+                  </span>
+                </div>
+              </td>
+              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm ">
+                <div className="flex justify-center">
+                  <FaRegMessage />
+                </div>
+              </td>
+            </tr>
+            {/* /ten/ */}
+            <tr
+              style={{ borderBottom: "1px solid lightGray" }}
+              className="text-center h-[40px]"
+            >
+              <td className="pl-[10px] flex justify-center pt-[20px]">
+                <div
+                  className="w-[40px] h-[40px] rounded-full bg-cover bg-center mt-[-12px] "
+                  style={{
+                    backgroundImage:
+                      "url('../src/assets/aiony-haust-3TLl_97HNJo-unsplash.jpg')",
+                  }}
+                ></div>
+              </td>
+              <td className="sm:text-sm font-bold text-[gray] ">Eva Riley</td>
+              <td className="sm:text-sm"> Eva@skote.com </td>
+              <td className="sm:text-sm ">
+                <div className="grid grid-cols-1">
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    Ruby
+                  </span>
+                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
+                    PHP
+                  </span>
+                </div>
+              </td>
+              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm ">
+                <div className="flex justify-center">
+                  <FaRegMessage />
                 </div>
               </td>
             </tr>
