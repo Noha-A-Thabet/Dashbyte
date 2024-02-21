@@ -1,16 +1,16 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaWpforms } from "react-icons/fa6";
-import { IoBarChartSharp } from "react-icons/io5";
-import { MdWork } from "react-icons/md";
-import { IoDocument } from "react-icons/io5";
-import { SiGooglemaps } from "react-icons/si";
-import { HiUsers } from "react-icons/hi";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { FaTasks } from "react-icons/fa";
-import { FaFileInvoiceDollar } from "react-icons/fa";
+// import { IoBarChartSharp } from "react-icons/io5";
+// import { MdWork } from "react-icons/md";
+// import { IoDocument } from "react-icons/io5";
+// import { SiGooglemaps } from "react-icons/si";
+// import { HiUsers } from "react-icons/hi";
+// import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+// import { FaTasks } from "react-icons/fa";
+// import { FaFileInvoiceDollar } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
 import { FaWifi } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
@@ -49,7 +49,7 @@ const Sidebar = () => {
         </h2>
 
         {/* team */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="team">
               <HiUsers />
@@ -58,7 +58,7 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="team">Team</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* forms */}
         <h2 className="font-mont flex items-center p-[15px]">
@@ -73,7 +73,7 @@ const Sidebar = () => {
         </h2>
 
         {/* Email*/}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Email">
               <MdEmail />
@@ -82,10 +82,10 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Email">Email</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* jobs */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Jobs">
               <MdWork />
@@ -94,10 +94,10 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Jobs">Jobs</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* Tasks */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Tasks">
               <FaTasks />
@@ -106,10 +106,10 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Tasks">Tasks</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* charts */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Charts">
               <IoBarChartSharp />
@@ -118,10 +118,10 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Charts"> Charts</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* blogs */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Blogs">
               <IoDocument />
@@ -130,10 +130,10 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Blogs"> Blogs</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* maps */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Maps">
               <SiGooglemaps />
@@ -142,10 +142,10 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Maps"> Maps</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* Invoices */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Invoices">
               <FaFileInvoiceDollar />
@@ -154,10 +154,10 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Invoices"> Invoices</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* Projects */}
-        <h2 className="font-mont flex items-center p-[15px]">
+        {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
             <Link to="Projects">
               <AiOutlineFundProjectionScreen />
@@ -166,7 +166,7 @@ const Sidebar = () => {
           <span className="sideBarLink px-[10px]">
             <Link to="Projects">Projects</Link>
           </span>
-        </h2>
+        </h2> */}
 
         {/* calendars */}
         <h2 className="font-mont flex items-center p-[15px]">
