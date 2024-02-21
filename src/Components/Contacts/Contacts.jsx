@@ -1,17 +1,19 @@
-import { FaRegMessage } from "react-icons/fa6";
+import { CiEdit, CiCircleRemove } from "react-icons/ci";
 
 const Contacts = () => {
   return (
-    <section
-      className="ml-[170px] mt-[1px] "
-      style={{ border: "2px solis green" }}
-    >
+    <section className="ml-[170px] mt-[1px] ">
       <div
-        className="wrappingTable  w-[80.5vw] h-[20vh] pb-[25px]  ml-[12px] "
+        className="wrappingTable  h-[20vh] pb-[25px]  ml-[12px] "
         style={{ margin: "0 auto" }}
       >
-        <table className=" mx-[0px] bg-[white] w-[90vw] h-[35vh] table-auto	border-collapse sm:w-[85vw] sm:ml-[-90px] lg:ml-[-1vw] lg:w-[80vw] 2xl:w-[85vw] 2xl:ml-[-50px] 2xl:text-xl">
-          <caption className="tracking-wide	 caption-top bg-[white] p-[12px] text-left	font-bold sm:text-md ">
+        <table
+          className=" mx-[0px] bg-[white] w-[90vw] h-[35vh] table-auto	border-collapse 
+        sm:ml-[-100px] sm:w-[88vw] lg:ml-[-1vw] 2xl:ml-[-40px] 2xl:text-xl
+        lg:w-[84vw] xl:w-[87.5vw] 2xl:w-[93vw]
+        "
+        >
+          <caption className="tracking-wide	 caption-top bg-[white] p-[12px] text-left	font-bold sm:text-md 2xl:ml-[40px]">
             USERS LIST
           </caption>
           <thead className="bg-[white]">
@@ -26,8 +28,8 @@ const Contacts = () => {
                 Name
               </th>
               <th border>Email</th>
-              <th border>Tags</th>
-              <th border>Projects</th>
+              <th border>Address</th>
+              <th border>Phone</th>
               <th border>Action</th>
             </tr>
           </thead>
@@ -51,18 +53,20 @@ const Contacts = () => {
               <td className="sm:text-sm">colin@skote.com </td>
               <td className="sm:text-sm">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Photoshop
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block mt-[10px]">
-                    illustrator
+                  <span className="block  mt-[10px] ">
+                    Suite 409 512 Quigley Cliff, Mitchellton, MS 83675-3273
                   </span>
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">(555) 867-5309</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
@@ -85,20 +89,18 @@ const Contacts = () => {
               <td className="sm:text-sm">Rafael@skote.com </td>
               <td className="sm:text-sm">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    PHP
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Ruby
-                  </span>
+                  425 Amada Keys, Deckowtown, AZ 91661
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">112</td>
-              <td className="sm:text-sm ">
-                <div className="flex justify-center">
-                  <FaRegMessage />
-                </div>
-              </td>
+              <td className="sm:text-sm text-[gray]">(555) 123-4567</td>
+              <div className="flex justify-center">
+                <span className="inline-block mr-[10px]">
+                  <CiEdit />
+                </span>
+                <span>
+                  <CiCircleRemove />
+                </span>
+              </div>
             </tr>
             {/* /third/ */}
             <tr
@@ -119,20 +121,18 @@ const Contacts = () => {
               <td className="sm:text-sm">John @skote.com </td>
               <td className="sm:text-sm">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    PHP
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Ruby
-                  </span>
+                  7061 Hoppe Place, New Treasa, MN 37421
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">112</td>
-              <td className="sm:text-sm ">
-                <div className="flex justify-center">
-                  <FaRegMessage />
-                </div>
-              </td>
+              <td className="sm:text-sm text-[gray]">(555) 987-6543</td>
+              <div className="flex justify-center">
+                <span className="inline-block mr-[10px]">
+                  <CiEdit />
+                </span>
+                <span>
+                  <CiCircleRemove />
+                </span>
+              </div>
             </tr>
 
             {/* /four/ */}
@@ -154,18 +154,18 @@ const Contacts = () => {
               <td className="sm:text-sm"> Shirley@skote.com </td>
               <td className="sm:text-sm">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    PHP
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Ruby
-                  </span>
+                  Suite 911 4537 McGlynn Dale, Kilbackfurt, RI 52295-5145
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">112</td>
+              <td className="sm:text-sm text-[gray]">(555) 246-8013</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
@@ -189,18 +189,18 @@ const Contacts = () => {
               <td className="sm:text-sm"> Allison@skote.com </td>
               <td className="sm:text-sm">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    React
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Redux
-                  </span>
+                  3025 Barbar Parkway, New Erinburgh, MD 78809
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">(555) 555-1212</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
@@ -223,18 +223,18 @@ const Contacts = () => {
               <td className="sm:text-sm">Mark @skote.com </td>
               <td className="sm:text-sm">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    JS
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Css
-                  </span>
+                  563 Buck Cliffs, Erinhaven, NY 65823
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">(555) 314-1592</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
@@ -259,19 +259,18 @@ const Contacts = () => {
               <td className="sm:text-sm"> Amelia@skote.com</td>
               <td className="sm:text-sm">
                 <div className="grid grid-cols-1">
-                  <span></span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Html
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    CSS
-                  </span>
+                  2411 Nicholle Causeway, North Terica, OK 95421-2258
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">(555) 777-8888</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
@@ -296,18 +295,18 @@ const Contacts = () => {
               <td className="sm:text-sm"> Ansley@skote.com </td>
               <td className="sm:text-sm ">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Ruby
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    PHP
-                  </span>
+                  Suite 480 6523 Chris Plain, East Pam, KS 08841
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">(555) 369-2580</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
@@ -332,18 +331,18 @@ const Contacts = () => {
               <td className="sm:text-sm">david@skote.com </td>
               <td className="sm:text-sm ">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Ruby
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    PHP
-                  </span>
+                  Suite 333 71711 Emard Overpass, Abbotttown, IN 12117
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">(555) 444-3333</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
@@ -365,18 +364,18 @@ const Contacts = () => {
               <td className="sm:text-sm"> Eva@skote.com </td>
               <td className="sm:text-sm ">
                 <div className="grid grid-cols-1">
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    Ruby
-                  </span>
-                  <span className="text-[purple] bg-[#b0baea] block  mt-[10px]">
-                    PHP
-                  </span>
+                  Apt. 196 201 Volkman Flat, Rohanville, AL 73262
                 </div>
               </td>
-              <td className="sm:text-sm text-[gray]">136</td>
+              <td className="sm:text-sm text-[gray]">(555) 888-9999</td>
               <td className="sm:text-sm ">
                 <div className="flex justify-center">
-                  <FaRegMessage />
+                  <span className="inline-block mr-[10px]">
+                    <CiEdit />
+                  </span>
+                  <span>
+                    <CiCircleRemove />
+                  </span>
                 </div>
               </td>
             </tr>
