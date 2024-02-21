@@ -36,6 +36,18 @@ const Sidebar = () => {
           </span>
         </h2>
 
+        {/* contacts */}
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Contacts">
+              <FaWifi />
+            </Link>
+          </span>
+          <span className="sideBarLink px-[10px]">
+            <Link to="Contacts"> Contacts</Link>
+          </span>
+        </h2>
+
         {/* team */}
         {/* <h2 className="font-mont flex items-center p-[15px]">
           <span className="linkIcon">
@@ -168,17 +180,6 @@ const Sidebar = () => {
           </span>
         </h2>
 
-        {/* contacts */}
-        <h2 className="font-mont flex items-center p-[15px]">
-          <span className="linkIcon">
-            <Link to="Contacts">
-              <FaWifi />
-            </Link>
-          </span>
-          <span className="sideBarLink px-[10px]">
-            <Link to="Contacts"> Contacts</Link>
-          </span>
-        </h2>
         <div className="sibeFooter relative ">
           <h3 className="absolute bottom-0  font-bold text-center">
             Design By Noha Ashraf
