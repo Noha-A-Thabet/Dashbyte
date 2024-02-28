@@ -1,6 +1,13 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getDocs,
+  deleteDoc,
+  doc,
+  updateDoc,
+} from "firebase/firestore";
 import { db } from "../Config/firebase";
 export const UsersContext = createContext();
 
@@ -11,10 +18,15 @@ const UsersFormProvider = ({ children }) => {
   const [userAddress, setUserAddress] = useState("");
   const [userPhone, setUserPhone] = useState("");
   const [usersInfo, setUsersInfo] = useState([]);
+  const [editUserInfo, setEditUserInfo] = useState(false);
+  const [updatedName, setUpdatedName] = useState("");
+  const [updatedEmail, setUpdatedEmail] = useState("");
+  const [updatedAddress, setUpdatedAddress] = useState("");
+  const [updatedPhone, setUpdatedPhone] = useState("");
 
   const collectionUsersRef = collection(db, "Users");
 
-  // Submit Users Info into Firebase
+  // Add Users Info into Firebase
   const submitUserForm = async () => {
     try {
       await addDoc(collectionUsersRef, {
@@ -47,7 +59,53 @@ const UsersFormProvider = ({ children }) => {
     }
   };
 
-  // get Docs grom firebase
+  // Delete Users From List
+  const DeleteUser = async (id) => {
+    const userDoc = doc(db, "Users", id);
+    await deleteDoc(userDoc);
+    setUsersInfo((prevUsersInfo) =>
+      prevUsersInfo.filter((user) => user.id !== id)
+    );
+  };
+
+  // Update Users Info
+  const updateUserInfo = async (id) => {
+    const usersDoc = doc(db, "Users", id);
+    const updatedFields = {};
+
+    if (updatedName !== "") {
+      updatedFields.Name = updatedName;
+    }
+    if (updatedEmail !== "") {
+      updatedFields.Email = updatedEmail;
+    }
+    if (updatedAddress !== "") {
+      updatedFields.Address = updatedAddress;
+    }
+    if (updatedPhone !== "") {
+      updatedFields.Phone = updatedPhone;
+    }
+
+    try {
+      await updateDoc(usersDoc, updatedFields);
+      setUsersInfo((prevUsersInfo) =>
+        prevUsersInfo.map((user) => {
+          if (user.id === id) {
+            return {
+              ...user,
+              ...updatedFields,
+            };
+          } else {
+            return user;
+          }
+        })
+      );
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  // UseEffect Fn
   useEffect(() => {
     getUsersInfoList();
   }, []);
@@ -65,6 +123,14 @@ const UsersFormProvider = ({ children }) => {
         setUserPhone,
         submitUserForm,
         usersInfo,
+        DeleteUser,
+        editUserInfo,
+        setEditUserInfo,
+        updateUserInfo,
+        setUpdatedAddress,
+        setUpdatedEmail,
+        setUpdatedName,
+        setUpdatedPhone,
       }}
     >
       {children}
