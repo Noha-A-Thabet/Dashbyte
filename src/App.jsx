@@ -15,6 +15,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import "./App.css";
+import AddEvents from "./Components/AddEvents/AddEvents";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="Maps" element={<Maps />} />
         <Route path="Projects" element={<Projects />} />
         <Route path="Tasks" element={<Tasks />} />
+        <Route path="calendars/addEvents" element={<AddEvents />} />
       </Routes>
     </>
   );
