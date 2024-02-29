@@ -87,6 +87,8 @@ const UsersFormProvider = ({ children }) => {
     }
 
     try {
+      usersDoc.find((user) => user.id === id);
+
       await updateDoc(usersDoc, updatedFields);
       setUsersInfo((prevUsersInfo) =>
         prevUsersInfo.map((user) => {
