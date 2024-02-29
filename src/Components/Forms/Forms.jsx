@@ -21,7 +21,7 @@ const Forms = () => {
     md:h-[92vh] md:w-[99vw] lg:w-[99.5vw] 2xl:h-[93.5vh]"
     >
       <section className="textualSec bg-[white] w-[70vw] h-[85vh] sm:h-[82vh]  sm:ml-[55px] sm:mt-[10px] md:ml-[100px] lg:ml-[130px]">
-        <h2 className="font-bold	text-center text-xl pt-[20px]">Register</h2>
+        <h2 className="font-bold	text-center text-xl pt-[20px]">Add User</h2>
         <div className=" flex justify-between  flex-col p-[30px] sm:p-[30px]">
           <label className="pb-[10px] font-bold ">Name</label>
           <input

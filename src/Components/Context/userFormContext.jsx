@@ -27,7 +27,38 @@ const UsersFormProvider = ({ children }) => {
   const collectionUsersRef = collection(db, "Users");
 
   // Add Users Info into Firebase
-  const submitUserForm = async () => {
+  const submitUserForm = async (e) => {
+    e.preventDefault();
+    const isValidEmail = (email) => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+    if (!userName.trim()) {
+      console.log("Name is required");
+      return;
+    } else if (userName.length < 4) {
+      console.log("Name should be at least 4 characters long");
+      return;
+    }
+
+    if (!userEmail.trim()) {
+      console.log("Email is required");
+      return;
+    } else if (!isValidEmail(userEmail)) {
+      console.log("Invalid Email Address");
+      return;
+    }
+
+    if (!userAddress.trim()) {
+      console.log("Address is required");
+      return;
+    }
+
+    if (!userPhone.trim()) {
+      console.log("Phone is required");
+      return;
+    }
+
     try {
       await addDoc(collectionUsersRef, {
         Name: userName,
@@ -35,6 +66,7 @@ const UsersFormProvider = ({ children }) => {
         Phone: userPhone,
         Address: userAddress,
       });
+
       getUsersInfoList();
       setUserAddress("");
       setUserEmail("");

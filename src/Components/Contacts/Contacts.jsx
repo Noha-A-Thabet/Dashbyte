@@ -1,5 +1,5 @@
 import { CiEdit, CiTrash } from "react-icons/ci";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { UsersContext } from "../Context/userFormContext";
 
 const Contacts = () => {
@@ -15,7 +15,7 @@ const Contacts = () => {
     updateUserInfo,
   } = useContext(UsersContext);
 
-  const [editUserId, setEditUserId] = useState(null);
+  // const [editUserId, setEditUserId] = useState(null);
 
   return (
     <section className="ml-[170px] mt-[1px] ">
@@ -150,7 +150,6 @@ const Contacts = () => {
                           onClick={() => {
                             updateUserInfo(user.id);
                             setEditUserInfo(false);
-                            setEditUserId();
                           }}
                         >
                           Submit
