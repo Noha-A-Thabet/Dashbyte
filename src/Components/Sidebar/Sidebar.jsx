@@ -23,8 +23,8 @@ const Sidebar = () => {
       <div className="container mx-auto">
         {/* home */}
         <h2
-          className="font-mont flex  items-center p-[15px]"
-          style={{ paddingTop: "200px" }}
+          className="font-mont flex  items-center p-[15px] home"
+          style={{ marginTop: "-350px" }}
         >
           <span className="linkIcon">
             <Link to="/">
@@ -180,11 +180,11 @@ const Sidebar = () => {
           </span>
         </h2>
 
-        <div className="sibeFooter relative ">
+        {/* <div className="sibeFooter relative ">
           <h3 className="absolute bottom-0  font-bold text-center">
             Design By Noha Ashraf
           </h3>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

@@ -79,3 +79,20 @@
         padding-left: 20px;
     }
 }
+
+
+@media (min-width: 1200px) {
+    .sideSec {
+        /* border: 2px solid orange; */
+        width: 110px !important;
+    }
+
+    .sideBarLink {
+        visibility: visible !important;
+        padding-left: 20px;
+    }
+
+    .home {
+        margin-top: -380px !important;
+    }
+}
