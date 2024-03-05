@@ -1,77 +1,68 @@
-import { BiSolidBellRing } from "react-icons/bi";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { FaRegMoon } from "react-icons/fa";
+
 import "./Navbar.css";
+import { FiMessageSquare } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <>
-      <header>
-        <nav
-          className="navBar  z-200 h-[60px] flex justify-between items-center xl:w-[80vw] "
-          style={{
-            borderBottom: "1px solid lightgray",
-            boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
-            position: "fixed",
-            top: "0px",
-            left: "10.2vw",
-            width: "89.5vw",
-          }}
+    //fixed z-100
+    <nav
+      className=" h-[60px] w-[100%] flex justify-between items-center  px-[10px] "
+      style={{
+        borderBottom: "1px solid lightgray",
+        boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          width: "500px",
+          justifyContent: "flex-start",
+        }}
+      >
+        <h2
+          className="font-lemon font-bold logoName"
+          style={{ letterSpacing: "4px" }}
         >
-          {/* logo */}
-          <div
-            style={{
-              display: "flex",
-              width: "22vw",
-              justifyContent: "flex-start",
-            }}
-          >
-            <h2
-              className="font-lemon font-bold logoName"
-              style={{ letterSpacing: "4px" }}
-            >
-              Dashbyte
-            </h2>
-          </div>
-          {/* input*/}
-          <div
-            style={{
-              width: "29vw",
-            }}
-          >
-            <input
-              type="search"
-              placeholder="search"
-              style={{
-                backgroundColor: "#f3f3f9",
-                height: "10px",
-                width: "230px",
-                padding: "12px",
-                border: "1px solid lightgray",
-              }}
-              className=" searchBar rounded-full"
-            />
+          Dashbyte
+        </h2>
+      </div>
+
+      {/* second*/}
+      <div className="w-[50%]  flex flex-nowrap justify-end items-center ">
+        {/* notification */}
+        <div className="w-[50px]  ">
+          <IoIosNotificationsOutline style={{ fontSize: "20px" }} />
+        </div>
+
+        {/* messages */}
+        <div className="w-[50px]  ">
+          <FiMessageSquare style={{ fontSize: "16px" }} />
+        </div>
+        {/*night mood */}
+        <div className="w-[50px]  ">
+          <FaRegMoon style={{ fontSize: "16px" }} />
+        </div>
+        {/* acc */}
+        <div
+          // style={{ border: "2px solid red" }}
+          className="w-[200px] flex justify-evenly items-center bg-[#f3f3f9]"
+        >
+          <div>
+            <p className="font-bold">Anna Adame</p>
+            <p className="text-[gray]">Founder</p>
           </div>
 
-          {/* Icons*/}
           <div
-            className="iconsSec flex flex-nowrap  justify-center items-center"
+            className="bg-cover bg-center rounded-full w-[35px] h-[35px]"
             style={{
-              width: "7vw",
+              backgroundImage: "url('../src/assets/avatar-1.jpg')",
             }}
-          >
-            <div className="w-[50px]">
-              <BiSolidBellRing style={{ fontSize: "20px" }} />
-            </div>
-
-            <div
-              className="bg-cover bg-center rounded-full w-[30px] h-[30px]"
-              style={{
-                backgroundImage: "url('../src/assets/avatar-1.jpg')",
-              }}
-            ></div>
-          </div>
-        </nav>
-      </header>
-    </>
+          ></div>
+        </div>
+      </div>
+    </nav>
   );
 };
 
