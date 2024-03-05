@@ -1,5 +1,8 @@
-import { BiSolidBellRing } from "react-icons/bi";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { FaRegMoon } from "react-icons/fa";
+
 import "./Navbar.css";
+import { FiMessageSquare } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -25,34 +28,39 @@ const Navbar = () => {
           Dashbyte
         </h2>
       </div>
-      {/* second*/}
-      <div>
-        <input
-          type="search"
-          placeholder="search"
-          style={{
-            backgroundColor: "#f3f3f9",
-            height: "30px",
-            width: "230px",
-            padding: "12px",
-            border: "1px solid lightgray",
-          }}
-          className=" searchBar rounded-full"
-        />
-      </div>
 
-      {/* third*/}
+      {/* second*/}
       <div className="w-[50%]  flex flex-nowrap justify-end items-center ">
+        {/* notification */}
         <div className="w-[50px]  ">
-          <BiSolidBellRing style={{ fontSize: "20px" }} />
+          <IoIosNotificationsOutline style={{ fontSize: "20px" }} />
         </div>
 
+        {/* messages */}
+        <div className="w-[50px]  ">
+          <FiMessageSquare style={{ fontSize: "16px" }} />
+        </div>
+        {/*night mood */}
+        <div className="w-[50px]  ">
+          <FaRegMoon style={{ fontSize: "16px" }} />
+        </div>
+        {/* acc */}
         <div
-          className="bg-cover bg-center rounded-full w-[30px] h-[30px]"
-          style={{
-            backgroundImage: "url('../src/assets/avatar-1.jpg')",
-          }}
-        ></div>
+          // style={{ border: "2px solid red" }}
+          className="w-[200px] flex justify-evenly items-center bg-[#f3f3f9]"
+        >
+          <div>
+            <p className="font-bold">Anna Adame</p>
+            <p className="text-[gray]">Founder</p>
+          </div>
+
+          <div
+            className="bg-cover bg-center rounded-full w-[35px] h-[35px]"
+            style={{
+              backgroundImage: "url('../src/assets/avatar-1.jpg')",
+            }}
+          ></div>
+        </div>
       </div>
     </nav>
   );
