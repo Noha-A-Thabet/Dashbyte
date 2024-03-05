@@ -1,0 +1,98 @@
+* {
+    box-sizing: content-box;
+}
+
+.sideSec {
+    /* border: 2px solid red !important; */
+}
+
+.sibeFooter {
+    height: 250px !important;
+}
+
+
+
+/* Media query */
+
+/* Max-width :600px */
+@media (max-width:600px) {
+    .sideSec {
+        /* border: 2px solid green !important; */
+        width: 15px;
+    }
+
+    .sideBarLink {
+        visibility: hidden;
+    }
+
+    .linkIcon {
+        display: block !important;
+        margin: -10px;
+    }
+}
+
+/* Min-width :600px */
+@media (min-width:600px) {
+    .sideSec {
+        /* border: 2px solid pink !important; */
+        width: 15px;
+    }
+
+    .sideBarLink {
+        visibility: hidden;
+    }
+
+    .linkIcon {
+        display: block !important;
+        margin: -10px;
+    }
+}
+
+
+/* Min-width :768px */
+@media (min-width:768px) {
+    .sideSec {
+        /* border: 2px solid pink !important; */
+        width: 15px;
+    }
+
+    .sideBarLink {
+        visibility: hidden;
+    }
+
+    .linkIcon {
+        display: block !important;
+        margin: -10px;
+    }
+}
+
+
+/* Min-width :992px */
+@media (min-width:992px) {
+    .sideSec {
+        /* border: 2px solid orange; */
+        width: 110px !important;
+    }
+
+    .sideBarLink {
+        visibility: visible !important;
+        padding-left: 20px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .sideSec {
+        /* border: 2px solid orange; */
+        width: 110px !important;
+    }
+
+    .sideBarLink {
+        visibility: visible !important;
+        padding-left: 20px;
+    }
+
+    .home {
+        margin-top: -380px !important;
+    }
+}

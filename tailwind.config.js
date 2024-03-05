@@ -18,6 +18,11 @@ export default {
       center: true,
       padding: '2rem',
     },
+    colors: {
+      lightPurple: "#d4dbf9",
+      darkPurple: "#556ee6"
+    },
+
   },
   plugins: [],
 }
