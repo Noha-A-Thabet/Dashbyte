@@ -1,7 +1,96 @@
+* {
+    box-sizing: content-box;
+}
+
 .sideSec {
     /* border: 2px solid red !important; */
 }
 
 .sibeFooter {
     height: 250px !important;
+}
+
+
+
+/* Media query */
+
+/* Max-width :600px */
+@media (max-width:600px) {
+    .sideSec {
+        /* border: 2px solid green !important; */
+        width: 13px !important;
+        margin-left: -15px !important
+    }
+
+    .sideBarLink {
+        visibility: hidden;
+    }
+
+    .linkIcon {
+        display: block !important;
+        margin-left: -5px;
+    }
+
+    .icon-name {
+        display: none !important;
+    }
+}
+
+/* Min-width :600px */
+@media (min-width:600px) {
+    .sideSec {
+        width: 15px;
+    }
+
+    .sideBarLink {
+        visibility: hidden;
+    }
+
+    .linkIcon {
+        display: block !important;
+        margin-left: -10px !important
+    }
+
+    .icon-name {
+        display: none !important;
+    }
+}
+
+
+/* Min-width :768px */
+@media (min-width:768px) {
+    .sideSec {
+        width: 15px;
+    }
+
+    .sideBarLink {
+        visibility: hidden;
+    }
+
+    .linkIcon {
+        display: block !important;
+        margin-left: -10px;
+    }
+
+    .icon-name {
+        display: none !important;
+    }
+}
+
+
+/* Min-width :992px */
+@media (min-width:992px) {
+    .sideSec {
+        /* border: 2px solid orange; */
+        width: 110px !important;
+    }
+
+    .sideBarLink {
+        visibility: visible !important;
+        padding-left: 20px;
+    }
+
+    .icon-name {
+        display: block !important;
+    }
 }
