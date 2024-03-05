@@ -21,14 +21,14 @@ nav {
     align-items: center;
 }
 
-/* Max-width:600px */
-@media (max-width:600px) {
+/* Min-width:600px */
+@media (min-width:600px) {
     .navBar {
-        /* border: 2px solid pink; */
+        /* border: 2px solid purple !important; */
         position: "fixed";
         top: 0 !important;
         left: 65px !important;
-        width: calc(100vw - 70px) !important;
+        width: 96vw !important
     }
 
     .logoName {
@@ -36,37 +36,33 @@ nav {
         /* border: 2px solid red; */
         width: 100%;
         text-align: center;
+        /* margin-left: -100px !important */
     }
 
     .searchBar {
-        /* border: 2px solid greenyellow !important; */
         width: 28vw !important;
         height: 5px !important;
     }
 
     .iconsSec {
-        /* border: 2px solid yellow !important; */
         width: 20vw !important
     }
 }
 
-
-
-/* Min-width:600px */
-@media (min-width:600px) {
+/* Max-width:600px */
+@media (max-width:600px) {
     .navBar {
-        /* border: 2px solid purple; */
         position: "fixed";
         top: 0 !important;
         left: 65px !important;
-        width: calc(100vw - 70px) !important;
+        width: 96vw !important
     }
 
     .logoName {
         font-size: 15px !important;
-        /* border: 2px solid red; */
         width: 100%;
         text-align: center;
+        margin-left: -60px !important
     }
 
     .searchBar {
@@ -89,7 +85,7 @@ nav {
         position: "fixed";
         top: 0 !important;
         left: 60px !important;
-        width: calc(100vw - 80px) !important;
+        width: 97vw !important;
     }
 
     .logoName {
@@ -97,6 +93,7 @@ nav {
         /* border: 2px solid red; */
         width: 100%;
         text-align: center;
+        margin-left: -120px !important
     }
 
     .searchBar {
@@ -105,10 +102,6 @@ nav {
         height: 5px !important;
     }
 
-    .iconsSec {
-        /* border: 2px solid yellow !important; */
-        /* width: 20vw !important */
-    }
 }
 
 /* min-width: 992px */
@@ -118,7 +111,7 @@ nav {
         position: "fixed";
         top: 0 !important;
         left: 160px !important;
-        width: calc(100vw - 180px) !important;
+        width: 98vw !important;
     }
 
     .logoName {
@@ -126,6 +119,7 @@ nav {
         /* border: 2px solid red; */
         width: 100%;
         text-align: center;
+        margin-left: -150px !important
     }
 
     .searchBar {
@@ -143,11 +137,10 @@ nav {
 /* min-width: 1200px */
 @media (min-width: 1200px) {
     .navBar {
-        /* border: 2px solid tan; */
         position: "fixed";
         top: 0 !important;
         left: 160px !important;
-        width: calc(100vw - 177px) !important;
+        width: 98.3vw !important;
     }
 
     .logoName {

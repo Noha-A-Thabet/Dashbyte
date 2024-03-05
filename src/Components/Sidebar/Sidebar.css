@@ -7,7 +7,7 @@
 }
 
 .sideSec {
-    /* border: 2px solid red !important; */
+    color: white;
 }
 
 .sibeFooter {
@@ -21,9 +21,8 @@
 /* Max-width :600px */
 @media (max-width:600px) {
     .sideSec {
-        /* border: 2px solid green !important; */
+        color: white;
         width: 13px !important;
-        margin-left: -15px !important
     }
 
     .sideBarLink {
@@ -32,7 +31,8 @@
 
     .linkIcon {
         display: block !important;
-        margin-left: -5px;
+        margin-left: -45px !important;
+
     }
 
     .icon-name {
@@ -43,7 +43,8 @@
 /* Min-width :600px */
 @media (min-width:600px) {
     .sideSec {
-        width: 15px;
+        width: 13px;
+        color: white;
     }
 
     .sideBarLink {
@@ -52,7 +53,7 @@
 
     .linkIcon {
         display: block !important;
-        margin-left: -10px !important
+        margin-left: -45px !important
     }
 
     .icon-name {
@@ -65,6 +66,7 @@
 @media (min-width:768px) {
     .sideSec {
         width: 15px;
+        color: white;
     }
 
     .sideBarLink {
@@ -85,7 +87,7 @@
 /* Min-width :992px */
 @media (min-width:992px) {
     .sideSec {
-        /* border: 2px solid orange; */
+        color: white;
         width: 110px !important;
     }
 
@@ -93,6 +95,13 @@
         visibility: visible !important;
         padding-left: 20px;
     }
+
+    .linkIcon {
+        display: block !important;
+        margin-left: -10px;
+    }
+
+
 
     .icon-name {
         display: block !important;
