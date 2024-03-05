@@ -1,8 +1,16 @@
-import Sidebar from "../Sidebar/Sidebar";
+import Dashboard from "../Dashboard/Dashboard";
+import Navbar from "../Navbar/Navbar";
+import Social from "../Social/Social";
+import Transaction from "../Transaction/Transaction";
+
 const Home = () => {
   return (
     <div>
-      <Sidebar />
+      <Navbar />
+
+      <Dashboard />
+      <Social />
+      <Transaction />
     </div>
   );
 };

@@ -2,6 +2,10 @@
     box-sizing: content-box;
 }
 
+* {
+    box-sizing: content-box;
+}
+
 .sideSec {
     /* border: 2px solid red !important; */
 }

@@ -20,6 +20,18 @@ const Sidebar = () => {
           </span>
         </h2>
 
+        {/* contacts */}
+        <h2 className="font-mont flex items-center p-[15px]">
+          <span className="linkIcon">
+            <Link to="Contacts">
+              <FaWifi />
+            </Link>
+          </span>
+          <span className="sideBarLink px-[10px]">
+            <Link to="Contacts"> Contacts</Link>
+          </span>
+        </h2>
+
         {/* forms */}
         <h2 className="font-mont flex items-center p-[10px]">
           <span className="linkIcon">
@@ -64,7 +76,7 @@ const Sidebar = () => {
           <span>
             <HiUsers />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="team">Team</Link>
           </span>
         </h2> */}
@@ -74,9 +86,10 @@ const Sidebar = () => {
           <span>
             <MdEmail />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Email">Email</Link>
           </span>
+        </h2> */}
         </h2> */}
 
         {/* jobs */}
@@ -84,7 +97,7 @@ const Sidebar = () => {
           <span>
             <MdWork />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Jobs">Jobs</Link>
           </span>
         </h2> */}
@@ -93,7 +106,7 @@ const Sidebar = () => {
           <span>
             <FaTasks />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Tasks">Tasks</Link>
           </span>
         </h2> */}
@@ -102,7 +115,7 @@ const Sidebar = () => {
           <span>
             <IoBarChartSharp />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Charts"> Charts</Link>
           </span>
         </h2> */}
@@ -111,7 +124,7 @@ const Sidebar = () => {
           <span>
             <IoDocument />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Blogs"> Blogs</Link>
           </span>
         </h2> */}
@@ -120,7 +133,7 @@ const Sidebar = () => {
           <span>
             <SiGooglemaps />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Maps"> Maps</Link>
           </span>
         </h2> */}
@@ -130,13 +143,12 @@ const Sidebar = () => {
           <span>
             <AiOutlineFundProjectionScreen />
           </span>
-          <span className="px-[10px]">
+          <span className="sideBarLink px-[10px]">
             <Link to="Projects">Projects</Link>
           </span>
         </h2> */}
       </div>
-    </section>
+    </nav>
   );
 };
-
 export default Sidebar;
