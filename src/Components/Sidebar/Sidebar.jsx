@@ -1,16 +1,8 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaWpforms } from "react-icons/fa6";
-import { IoBarChartSharp } from "react-icons/io5";
-import { MdWork } from "react-icons/md";
-import { IoDocument } from "react-icons/io5";
-import { SiGooglemaps } from "react-icons/si";
-import { HiUsers } from "react-icons/hi";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { FaTasks } from "react-icons/fa";
 import { FaFileInvoiceDollar } from "react-icons/fa";
 import { FaWifi } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 

@@ -12,6 +12,9 @@ import Maps from "./Components/Maps/Maps";
 import Projects from "./Components/Projects/Projects";
 import Tasks from "./Components/Tasks/Tasks";
 import { Routes, Route } from "react-router-dom";
+// import Navbar from "./Components/Navbar/Navbar";
+// import Header from "./Components/Header/Header";
+import "./App.css";
 
 function App() {
   return (
