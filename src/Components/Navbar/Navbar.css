@@ -28,7 +28,7 @@ nav {
         position: "fixed";
         top: 0 !important;
         left: 65px !important;
-        width: 96vw !important
+        width: 94vw !important
     }
 
     .logoName {
@@ -36,7 +36,7 @@ nav {
         /* border: 2px solid red; */
         width: 100%;
         text-align: center;
-        /* margin-left: -100px !important */
+        margin-left: -80px !important
     }
 
     .searchBar {
