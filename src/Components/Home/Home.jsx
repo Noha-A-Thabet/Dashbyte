@@ -9,14 +9,22 @@ const Home = () => {
     <section className="">
       <section
         style={{ marginLeft: "158px" }}
-        className="h-[51vh] w-[88vw] sm:ml-[-100px] sm:w-[72vw]"
+        className="h-[51vh] w-[88vw] sm:ml-[-100px] sm:w-[72vw] lg:ml-[-50px] "
       >
-        <div className="flex justify-between sm:flex sm:flex-col  sm:ml-[-98px]">
+        <div
+          className="flex justify-between sm:flex sm:flex-col   
+          sm:ml-[-90px]   md:w-[88vw] xl:flex xl:flex-row lg:ml-[5px] lg:w-[82vw] 
+          xl:w-[87vw] 2xl:w-[90vw]"
+          style={{ border: "2px solid green" }}
+        >
           {/* first col */}
-          <div className="bg-[white]">
+          <div
+            className="bg-[white] sm:w-[85vw] md:w-[88vw] lg:w-[81vw] xl:w-[30vw] 2xl:w-[30vw]"
+            style={{ border: "2px solid yellow" }}
+          >
             <h1 className="font-bold pt-[20px] pl-[25px]">Project Status</h1>
 
-            <div className=" w-[30vw] h-[45vh] grid grid-cols-2 gap-1 bg-[white] sm:w-[83vw]">
+            <div className=" w-[30vw] h-[45vh] grid grid-cols-2 gap-1 bg-[white] sm:w-[83vw] lg:w-[81vw] xl:w-[30vw]">
               {/* first */}
               <div className="m-[20px]  rounded-md bg-[#f1f0f8] flex flex-col items-center justify-center">
                 <div className="  bg-[#7a70ba] text-[white] w-[45px] h-[45px] rounded-3xl">
@@ -56,8 +64,11 @@ const Home = () => {
             </div>
           </div>
           {/* second col */}
-          <div className="w-[55vw] h-[45vh] sm:w-[8vw] sm:mt-[30px]">
-            <div className=" ml-[-120px] ">
+          <div
+            className="w-[55vw] h-[45vh] sm:w-[8vw] sm:mt-[30px]  xl:w-[52vw] xl:h-[46vh] xl:mt-[1px] "
+            style={{ border: "2px solid gray" }}
+          >
+            <div className=" ml-[-120px] xl:ml-[-160px] 2xl:ml-[-210px]">
               <Transaction />
             </div>
           </div>
