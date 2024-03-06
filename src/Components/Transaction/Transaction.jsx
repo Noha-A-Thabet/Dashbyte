@@ -3,7 +3,10 @@ import { FaRegSquareFull } from "react-icons/fa6";
 const Transaction = () => {
   return (
     <div className="wrappingTable bg-[#f4f4f8]  w-[50vw]  mx-[165px] pb-[25px] h-[40vh] ">
-      <table className="bg-[white] w-[55vw] ml-[-45px] h-[42vh] sm:w-[85vw] md:w-[88vw] lg:w-[81vw] xl:w-[55vw] 2xl:w-[57vw] 2xl:h-[43vh]">
+      <table
+        className="bg-[white] w-[55vw] ml-[-45px] h-[42vh] sm:w-[85vw] md:w-[88vw] lg:w-[81vw] xl:w-[55vw] 2xl:w-[57vw] 2xl:h-[43vh]"
+        style={{ border: "2px solid pink" }}
+      >
         <caption className="tracking-wide	 caption-top bg-[white] p-[20px] text-left	font-bold sm:text-md ">
           Latest Transaction
         </caption>
@@ -42,11 +45,6 @@ const Transaction = () => {
               Paid
             </td>
             <td className="sm:text-sm"> Mastercard</td>
-            {/* <td className=" sm:text-sm">
-              <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
-                View Details
-              </button>
-            </td> */}
           </tr>
           {/* /second/ */}
           <tr
@@ -64,11 +62,6 @@ const Transaction = () => {
               Chargeback{" "}
             </td>
             <td> Visa</td>
-            {/* <td className=" sm:text-sm">
-              <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg  sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
-                View Details
-              </button>
-            </td> */}
           </tr>
           {/* /third/ */}
           <tr

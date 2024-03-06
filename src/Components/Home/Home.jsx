@@ -3,18 +3,21 @@ import { MdTaskAlt } from "react-icons/md";
 import { GrInProgress } from "react-icons/gr";
 import { IoApps } from "react-icons/io5";
 import Transaction from "../Transaction/Transaction";
+import Charts from "../Charts/Charts";
+import SecondChart from "../Charts/AreaCahrt";
 
 const Home = () => {
   return (
-    <section className="">
+    <section className="status-transaction-project">
+      {/* first section */}
       <section
         style={{ marginLeft: "158px" }}
-        className="h-[51vh] w-[88vw] sm:ml-[-100px] sm:w-[72vw] lg:ml-[-50px] "
+        className="status-transaction-project h-[51vh] w-[88vw] sm:ml-[-100px] sm:w-[72vw] lg:ml-[-50px] "
       >
         <div
           className="flex justify-between sm:flex sm:flex-col   
           sm:ml-[-90px]   md:w-[88vw] xl:flex xl:flex-row lg:ml-[5px] lg:w-[82vw] 
-          xl:w-[87vw] 2xl:w-[90vw]"
+          xl:w-[86vw] 2xl:w-[90vw]"
           style={{ border: "2px solid green" }}
         >
           {/* first col */}
@@ -68,10 +71,25 @@ const Home = () => {
             className="w-[55vw] h-[45vh] sm:w-[8vw] sm:mt-[30px]  xl:w-[52vw] xl:h-[46vh] xl:mt-[1px] "
             style={{ border: "2px solid gray" }}
           >
-            <div className=" ml-[-120px] xl:ml-[-160px] 2xl:ml-[-210px]">
+            <div className=" ml-[-120px] xl:ml-[-160px] 2xl:ml-[-210px] ">
               <Transaction />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* second section */}
+      <section
+        className="flex  justify-between w-[86vw] ml-[160px] mt-[50px] bg-[white]"
+        style={{ border: "5px solid tan" }}
+      >
+        {/* first */}
+        <div className=" w-[40vw]" style={{ border: "2px solid red" }}>
+          <Charts />
+        </div>
+        {/* second */}
+        <div className="w-[44vw]" style={{ border: "2px solid gray" }}>
+          <SecondChart />
         </div>
       </section>
     </section>
