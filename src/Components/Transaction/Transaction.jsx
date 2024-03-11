@@ -2,14 +2,10 @@ import { FaRegSquareFull } from "react-icons/fa6";
 
 const Transaction = () => {
   return (
-    <div className="wrappingTable bg-[#f4f4f8]  w-[90.5vw]  mx-[165px] pb-[25px] sm:w-[70vw] md:w-[70vw]  h-[55vh]">
+    <div className="wrappingTable bg-[#f4f4f8]  w-[50vw]  mx-[165px] pb-[25px] h-[40vh] ">
       <table
-        className=" mx-[20px] bg-[white] w-[90vw] h-[45vh] table-auto	border-collapse
-        sm:w-[87vw] sm:ml-[-100px]  sm:mx-auto sm:h-[65vh] sm:overflow-scroll
-         lg:mx-[-10px]  lg:w-[83vw]
-         xl:w-[86vw] xl:mx-[-10px]
-2xl:w-[90vw] 2xl:mx-[-1px]
-  "
+        className="bg-[white] w-[55vw] ml-[-45px] h-[42vh] sm:w-[85vw] md:w-[88vw] 
+        lg:w-[81vw] xl:w-[53vw] 2xl:w-[55vw] 2xl:h-[43vh]"
       >
         <caption className="tracking-wide	 caption-top bg-[white] p-[20px] text-left	font-bold sm:text-md ">
           Latest Transaction
@@ -28,9 +24,9 @@ const Transaction = () => {
             <th border>Billing Name</th>
             <th border>Date</th>
             <th border>Total</th>
-            <th border>Payment Status</th>
+            <th border> Status</th>
             <th border>Payment Method</th>
-            <th border>Details</th>
+            {/* <th border>Details</th> */}
           </tr>
         </thead>
         <tbody>
@@ -49,11 +45,6 @@ const Transaction = () => {
               Paid
             </td>
             <td className="sm:text-sm"> Mastercard</td>
-            <td className=" sm:text-sm">
-              <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
-                View Details
-              </button>
-            </td>
           </tr>
           {/* /second/ */}
           <tr
@@ -71,11 +62,6 @@ const Transaction = () => {
               Chargeback{" "}
             </td>
             <td> Visa</td>
-            <td className=" sm:text-sm">
-              <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg  sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
-                View Details
-              </button>
-            </td>
           </tr>
           {/* /third/ */}
           <tr
@@ -91,11 +77,11 @@ const Transaction = () => {
             <td className="sm:text-sm  text-[gray]">$384 </td>
             <td className="sm:text-sm  bg-[#daf4eb] text-[green]">Paid </td>
             <td className=" sm:text-sm"> Paypal</td>
-            <td className=" sm:text-sm">
+            {/* <td className=" sm:text-sm">
               <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg  sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
                 View Details
               </button>
-            </td>
+            </td> */}
           </tr>
 
           {/* /fourth/ */}
@@ -112,11 +98,11 @@ const Transaction = () => {
             <td className="  sm:text-sm text-[gray]">$384 </td>
             <td className="  sm:text-sm bg-[#daf4eb] text-[green]">Paid </td>
             <td className=" sm:text-sm"> Paypal</td>
-            <td className=" sm:text-sm">
+            {/* <td className=" sm:text-sm">
               <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg  sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
                 View Details
               </button>
-            </td>
+            </td> */}
           </tr>
 
           {/* /fifth/ */}
@@ -135,11 +121,11 @@ const Transaction = () => {
               Refund{" "}
             </td>
             <td className="sm:text-sm"> Visa</td>
-            <td className=" sm:text-sm">
+            {/* <td className=" sm:text-sm">
               <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg  sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
                 View Details
               </button>
-            </td>
+            </td> */}
           </tr>
 
           {/* /sixth/ */}
@@ -155,11 +141,11 @@ const Transaction = () => {
               Paid
             </td>
             <td className=" sm:text-sm"> Paypal</td>
-            <td className=" sm:text-sm">
+            {/* <td className=" sm:text-sm">
               <button className="bg-[#485EC4] text-[white] w-[8vw] h-[4vh] rounded-lg  sm:w-[14vw] lg:h-[5vh] xl:w-[10vw]">
                 View Details
               </button>
-            </td>
+            </td> */}
           </tr>
         </tbody>
       </table>

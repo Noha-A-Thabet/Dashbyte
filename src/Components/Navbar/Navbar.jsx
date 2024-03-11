@@ -6,9 +6,8 @@ import { FiMessageSquare } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    //fixed z-100
     <nav
-      className="navBar  h-[60px] w-[99%] flex justify-between items-center  px-[10px] "
+      className="navBar  h-[60px] w-[99%] flex justify-between items-center  px-[10px] bg-[white]"
       style={{
         borderBottom: "1px solid lightgray",
         boxShadow: "5px 5px 5px rgba(60, 60, 60, 0.1)",
