@@ -55,16 +55,16 @@ const data = [
 
 const SecondChart = () => {
   return (
-    <div style={{ width: "100%" }} className="">
+    <div style={{ width: "100%" }} className="xl:ml-[-30px] ">
       <h3 className="text-[#979fa9] p-[20px] font-bold">
         Currently Running
         <span className="text-[#8b82c3] font-bold"> 28 Projects</span>
       </h3>
 
       <div className="pt-[50px]">
-        <ResponsiveContainer width={600} height={300}>
+        <ResponsiveContainer width="100%" height={300}>
           <AreaChart
-            width={800}
+            width="100%"
             height={500}
             data={data}
             syncId="anyId"
@@ -73,6 +73,7 @@ const SecondChart = () => {
               right: 30,
               left: 0,
               bottom: 0,
+              responsive: true,
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />

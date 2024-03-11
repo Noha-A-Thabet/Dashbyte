@@ -17,14 +17,10 @@ const Home = () => {
         <div
           className="flex justify-between sm:flex sm:flex-col   
           sm:ml-[-90px]   md:w-[88vw] xl:flex xl:flex-row lg:ml-[5px] lg:w-[82vw] 
-          xl:w-[86vw] 2xl:w-[90vw]"
-          style={{ border: "2px solid green" }}
+          xl:w-[85vw] 2xl:w-[89vw]"
         >
           {/* first col */}
-          <div
-            className="bg-[white] sm:w-[85vw] md:w-[88vw] lg:w-[81vw] xl:w-[30vw] 2xl:w-[30vw]"
-            style={{ border: "2px solid yellow" }}
-          >
+          <div className="bg-[white] sm:w-[85vw] md:w-[88vw] lg:w-[81vw] xl:w-[30vw] 2xl:w-[30vw]">
             <h1 className="font-bold pt-[20px] pl-[25px]">Project Status</h1>
 
             <div className=" w-[30vw] h-[45vh] grid grid-cols-2 gap-1 bg-[white] sm:w-[83vw] lg:w-[81vw] xl:w-[30vw]">
@@ -67,11 +63,8 @@ const Home = () => {
             </div>
           </div>
           {/* second col */}
-          <div
-            className="w-[55vw] h-[45vh] sm:w-[8vw] sm:mt-[30px]  xl:w-[52vw] xl:h-[46vh] xl:mt-[1px] "
-            style={{ border: "2px solid gray" }}
-          >
-            <div className=" ml-[-120px] xl:ml-[-160px] 2xl:ml-[-210px] ">
+          <div className="w-[55vw] h-[45vh] sm:w-[8vw] sm:mt-[30px]  xl:w-[50vw] xl:h-[46vh] xl:mt-[1px] ">
+            <div className=" ml-[-120px] xl:ml-[-150px] 2xl:ml-[-210px] ">
               <Transaction />
             </div>
           </div>
@@ -80,15 +73,26 @@ const Home = () => {
 
       {/* second section */}
       <section
-        className="flex  justify-between w-[86vw] ml-[160px] mt-[50px] bg-[white]"
-        style={{ border: "5px solid tan" }}
+        className="flex  justify-between w-[86vw] ml-[160px] mt-[50px] 
+         sm:mt-[420px] sm:ml-[65px] sm:w-[85vw] sm:flex sm:flex-col 
+         sm:justify-between md:w-[88vw] lg:ml-[160px] lg:w-[81vw]
+         xl:mt-[40px] xl: xl:flex xl:flex-row  xl:w-[85vw] xl:h-[60vh] 
+         2xl:h-[50vh] 2xl:w-[89vw]
+         "
       >
         {/* first */}
-        <div className=" w-[40vw]" style={{ border: "2px solid red" }}>
+        <div
+          className=" w-[40vw] sm:w-[85vw] sm:mb-[30px] bg-[white] md:w-[80vw] 
+          md:pl-[60px] lg:w-[74vw] lg:pl-[70px]  xl:w-[38vw] xl:pl-[0px] xl:h-[60vh]
+          2xl:h-[50vh] 2xl:w-[40vw]"
+        >
           <Charts />
         </div>
         {/* second */}
-        <div className="w-[44vw]" style={{ border: "2px solid gray" }}>
+        <div
+          className="w-[44vw] sm:w-[85vw] bg-[white] md:w-[83vw] md:pl-[30px] 
+          lg:w-[78vw] lg:pl-[35px]  xl:w-[40vw]  xl:h-[60vh]      2xl:h-[50vh]"
+        >
           <SecondChart />
         </div>
       </section>

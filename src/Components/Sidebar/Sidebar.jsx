@@ -8,7 +8,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <section className="sideSec w-[150px] h-[100vh] fixed left-0 bg-[#2a3650] text-white p-6 ">
+    <section className="sideSec w-[150px] h-[100vh]  bg-[#2a3650] text-white p-6 ">
       <div className="container mx-auto">
         {/* home */}
         <h2 className="font-mont flex  items-center p-[10px]">

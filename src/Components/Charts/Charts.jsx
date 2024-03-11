@@ -1,5 +1,5 @@
 import { BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
-// import "./Dashboard.css";
+
 const Charts = () => {
   const data = [
     { name: "Jan", Email: 20 },
@@ -14,6 +14,7 @@ const Charts = () => {
     { name: "Nov", Email: 76 },
     { name: "Dec", Email: 80 },
   ];
+
   return (
     <>
       <div className="emailSent grid grid-cols-1">
@@ -21,13 +22,33 @@ const Charts = () => {
           <h2 className="p-[15px]  font-bold text-lg">Total Projects</h2>
         </div>
       </div>
-      <BarChart width={480} height={330} data={data} className="bar pt-[20px]">
+
+      {/* <ResponsiveContainer width="80%" height="80%"> */}
+      <BarChart data={data} className="bar pt-[20px] " width={400} height={330}>
         <Bar type="monotone" dataKey="Email" strokeWidth={3} fill="#8884d8" />
         <XAxis dataKey="name" className="font-semibold" />
         <YAxis />
         <Tooltip />
         {/* <Legend /> */}
       </BarChart>
+
+      {/* </ResponsiveContainer> */}
+
+      {/* <ResponsiveContainer> */}
+      {/* <BarChart
+          width={400}
+          height={330}
+          data={data}
+          className="bar pt-[20px] "
+        >
+          <Bar type="monotone" dataKey="Email" strokeWidth={3} fill="#8884d8" />
+          <XAxis dataKey="name" className="font-semibold" />
+          <YAxis />
+          <Tooltip />
+          {/* <Legend /> */}
+      {/* </BarChart> */}
+      {/* </ResponsiveContainer> */}
+      {/* </div> */}
     </>
   );
 };
