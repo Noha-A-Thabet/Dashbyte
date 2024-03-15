@@ -39,17 +39,11 @@ const UsersFormProvider = ({ children }) => {
     return emailRegx.test(email);
   };
 
-  // phone validation
-  // const isValidPhoneNumber = (userPhone) => {
-  //   const phoneRegex = /^\d{10}$/;
-  //   return phoneRegex.test(userPhone);
-  // };
-
   // Form Validation
   const validateForm = () => {
     let newErrors = {};
     if (!userName || userName.trim() === 0) {
-      newErrors.userName = "Username is Required";
+      newErrors.userName = "Name is required";
     } else if (userName.trim().length < 4) {
       newErrors.userName = "Name must be at least 4 characters ";
     }
@@ -62,12 +56,12 @@ const UsersFormProvider = ({ children }) => {
 
     // email is valid
     if (!userAddress) {
-      newErrors.userAddress = "userAddress is required";
+      newErrors.userAddress = "Address is required";
     }
 
     // Phone is Valid
     if (!userPhone) {
-      newErrors.userPhone = "Userphone is required";
+      newErrors.userPhone = "Phone is required";
     } else if (userPhone.trim().length < 10) {
       newErrors.userPhone = "Phone  must be 10 digits";
     }
