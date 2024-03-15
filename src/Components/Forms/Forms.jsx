@@ -13,7 +13,21 @@ const Forms = () => {
     userPhone,
     setUserPhone,
     submitUserForm,
+    errors,
   } = useContext(UsersContext);
+
+  const changeNameHandler = (e) => {
+    setUserName(e.target.value);
+  };
+  const changeEmailHandler = (e) => {
+    setUserEmail(e.target.value);
+  };
+  const changeAddressHandler = (e) => {
+    setUserAddress(e.target.value);
+  };
+  const changePhoneHandler = (e) => {
+    setUserPhone(e.target.value);
+  };
 
   return (
     <section
@@ -22,57 +36,61 @@ const Forms = () => {
     >
       <section className="textualSec bg-[white] w-[70vw] h-[85vh] sm:h-[82vh]  sm:ml-[55px] sm:mt-[10px] md:ml-[100px] lg:ml-[130px]">
         <h2 className="font-bold	text-center text-xl pt-[20px]">Register</h2>
-        <div className=" flex justify-between  flex-col p-[30px] sm:p-[30px]">
-          <label className="pb-[10px] font-bold ">Name</label>
-          <input
-            value={userName}
-            type="text"
-            className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
-            style={{ border: "1px solid lightGray" }}
-            onChange={(e) => {
-              setUserName(e.target.value);
-            }}
-          />
+        <form onSubmit={submitUserForm}>
+          <div className=" flex justify-between  flex-col p-[30px] sm:p-[30px]">
+            <label className="pb-[10px] font-bold ">Name</label>
+            <input
+              value={userName}
+              type="text"
+              className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
+              style={{ border: "1px solid lightGray" }}
+              onChange={changeNameHandler}
+            />
 
-          <label className="pb-[10px] font-bold">Email</label>
-          <input
-            value={userEmail}
-            type="email"
-            className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
-            style={{ border: "1px solid lightGray" }}
-            onChange={(e) => {
-              setUserEmail(e.target.value);
-            }}
-          />
+            {errors.userName && (
+              <div style={{ color: "red" }}>{errors.userName}</div>
+            )}
 
-          <label className="pb-[10px] font-bold">Address</label>
-          <input
-            value={userAddress}
-            type="text"
-            className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
-            style={{ border: "1px solid lightGray" }}
-            onChange={(e) => {
-              setUserAddress(e.target.value);
-            }}
-          />
+            <label className="pb-[10px] font-bold">Email</label>
+            <input
+              value={userEmail}
+              type="email"
+              className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
+              style={{ border: "1px solid lightGray" }}
+              onChange={changeEmailHandler}
+            />
+            {errors.userEmail && (
+              <div style={{ color: "red" }}>{errors.userEmail}</div>
+            )}
+            <label className="pb-[10px] font-bold">Address</label>
+            <input
+              value={userAddress}
+              type="text"
+              className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
+              style={{ border: "1px solid lightGray" }}
+              onChange={changeAddressHandler}
+            />
 
-          <label className="pb-[10px] font-bold">Phone</label>
-          <input
-            value={userPhone}
-            type="tel"
-            className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
-            style={{ border: "1px solid lightGray" }}
-            onChange={(e) => {
-              setUserPhone(e.target.value);
-            }}
-          />
-          <button
-            className="bg-[#f4f4f8] w-[15vw] h-[5vh] mt-[30px] mx-auto font-bold	text-center"
-            onClick={submitUserForm}
-          >
-            Submit
-          </button>
-        </div>
+            {errors.userAddress && (
+              <div style={{ color: "red" }}>{errors.userAddress}</div>
+            )}
+            <label className="pb-[10px] font-bold">Phone</label>
+            <input
+              value={userPhone}
+              type="tel"
+              className="mb-[10px] w-[55vw]  h-[4vh] focus:border-2 focus:border-gray-300"
+              style={{ border: "1px solid lightGray" }}
+              onChange={changePhoneHandler}
+            />
+
+            {errors.userPhone && (
+              <div style={{ color: "red" }}>{errors.userPhone}</div>
+            )}
+            <button className="bg-[#f4f4f8] w-[15vw] h-[5vh] mt-[30px] mx-auto font-bold	text-center">
+              Submit
+            </button>
+          </div>
+        </form>
       </section>
     </section>
   );

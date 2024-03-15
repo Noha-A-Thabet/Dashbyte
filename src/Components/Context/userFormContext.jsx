@@ -9,6 +9,8 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { db } from "../Config/firebase";
+// import * as Yup from "yup";
+
 export const UsersContext = createContext();
 
 // eslint-disable-next-line react/prop-types
@@ -23,25 +25,88 @@ const UsersFormProvider = ({ children }) => {
   const [updatedEmail, setUpdatedEmail] = useState("");
   const [updatedAddress, setUpdatedAddress] = useState("");
   const [updatedPhone, setUpdatedPhone] = useState("");
-
+  const [errors, setErrors] = useState({
+    userName: "",
+    userEmail: "",
+    userAddress: "",
+    userPhone: "",
+  });
   const collectionUsersRef = collection(db, "Users");
 
+  // email validation
+  const isValidEmail = (email) => {
+    const emailRegx = /^\S+@\S+\.\S+$/;
+    return emailRegx.test(email);
+  };
+
+  // phone validation
+  // const isValidPhoneNumber = (userPhone) => {
+  //   const phoneRegex = /^\d{10}$/;
+  //   return phoneRegex.test(userPhone);
+  // };
+
+  // Form Validation
+  const validateForm = () => {
+    let newErrors = {};
+    if (!userName || userName.trim() === 0) {
+      newErrors.userName = "Username is Required";
+    } else if (userName.trim().length < 4) {
+      newErrors.userName = "Name must be at least 4 characters ";
+    }
+
+    if (!userEmail) {
+      newErrors.userEmail = "Email is required";
+    } else if (!isValidEmail(userEmail)) {
+      newErrors.userEmail = "Invalid email format";
+    }
+
+    // email is valid
+    if (!userAddress) {
+      newErrors.userAddress = "userAddress is required";
+    }
+
+    // Phone is Valid
+    if (!userPhone) {
+      newErrors.userPhone = "Userphone is required";
+    } else if (userPhone.trim().length < 10) {
+      newErrors.userPhone = "Phone  must be 10 digits";
+    }
+
+    setErrors(newErrors);
+    console.log(errors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   // Add Users Info into Firebase
-  const submitUserForm = async () => {
+  const submitUserForm = async (e) => {
+    e.preventDefault();
+
     try {
-      await addDoc(collectionUsersRef, {
-        Name: userName,
-        Email: userEmail,
-        Phone: userPhone,
-        Address: userAddress,
-      });
-      getUsersInfoList();
-      setUserAddress("");
-      setUserEmail("");
-      setUserPhone("");
-      setUserName("");
+      const isValid = validateForm(); // Validation moved here
+      if (isValid) {
+        console.log("form submitted is valid", {
+          userName,
+          userEmail,
+          userAddress,
+          userPhone,
+        });
+
+        await addDoc(collectionUsersRef, {
+          Name: userName,
+          Email: userEmail,
+          Phone: userPhone,
+          Address: userAddress,
+        });
+        getUsersInfoList();
+        setUserAddress("");
+        setUserEmail("");
+        setUserPhone("");
+        setUserName("");
+      } else {
+        console.log("form not valid");
+      }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
@@ -131,6 +196,7 @@ const UsersFormProvider = ({ children }) => {
         setUpdatedEmail,
         setUpdatedName,
         setUpdatedPhone,
+        errors,
       }}
     >
       {children}
@@ -139,3 +205,36 @@ const UsersFormProvider = ({ children }) => {
 };
 
 export default UsersFormProvider;
+
+// const submitUserForm = async (e) => {
+//   e.preventDefault();
+
+//   try {
+//     const isValid = validateForm();
+//     if (isValid) {
+//       console.log("form submitted is valid", {
+//         userName,
+// // Add Users Info into Firebase
+//         userEmail,
+//         userAddress,
+//         userPhone,
+//       });
+
+//       await addDoc(collectionUsersRef, {
+//         Name: userName,
+//         Email: userEmail,
+//         Phone: userPhone,
+//         Address: userAddress,
+//       });
+//       getUsersInfoList();
+//       setUserAddress("");
+//       setUserEmail("");
+//       setUserPhone("");
+//       setUserName("");
+//     } else {
+//       console.log("formm not valid");
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
