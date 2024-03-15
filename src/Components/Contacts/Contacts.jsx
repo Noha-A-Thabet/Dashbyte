@@ -67,7 +67,7 @@ const Contacts = () => {
                   <td className="sm:text-sm font-bold text-[gray] ">
                     {user.Name}
                     <br />
-                    {editUserInfo && (
+                    {editUserInfo === user.id && (
                       <>
                         <input
                           type="text"
@@ -85,7 +85,7 @@ const Contacts = () => {
                   <td className="sm:text-sm">
                     {user.Email}
                     <br />
-                    {editUserInfo && (
+                    {editUserInfo === user.id && (
                       <>
                         <input
                           type="text"
@@ -105,7 +105,7 @@ const Contacts = () => {
                       <span className="block  ">{user.Address}</span>
                     </div>
 
-                    {editUserInfo && (
+                    {editUserInfo === user.id && (
                       <>
                         <input
                           type="text"
@@ -126,7 +126,7 @@ const Contacts = () => {
                   <td className="sm:text-sm text-[gray]">
                     {user.Phone}
                     <br />
-                    {editUserInfo && (
+                    {editUserInfo === user.id && (
                       <>
                         <input
                           type="text"
@@ -143,7 +143,7 @@ const Contacts = () => {
                   {/* Icons */}
                   <td className="sm:text-sm ">
                     <div className="flex justify-center">
-                      {editUserInfo && (
+                      {editUserInfo === user.id && (
                         <button
                           className="w-[65px] h-[30px] mr-[10px] bg-[green] text-[white] font-bold"
                           style={{ border: "1px solid lightGray" }}
@@ -160,7 +160,7 @@ const Contacts = () => {
                       <button className="inline-block mr-[10px] font-[55px]">
                         <CiEdit
                           onClick={() => {
-                            setEditUserInfo(true);
+                            setEditUserInfo(user.id);
                           }}
                           style={{ fontSize: "18px" }}
                         />
